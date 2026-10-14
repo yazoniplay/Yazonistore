@@ -1,6 +1,6 @@
 (()=>{"use strict";
 const URL="https://ppaknwuwiublxogclqdw.supabase.co";
-const KEY="sb_publishable_3_4_b-tj5VnnD-OR2bgX_g_8_8mktyac9";
+const KEY="sb_publishable_3_4_b-tj5VnnD-OR2bgX_g_8mktyac9";
 const db=window.supabase?.createClient(URL,KEY);
 const BAG="offcut.bag.v2";
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
