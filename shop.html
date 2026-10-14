@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f5f3ed">
-<meta name="description" content="Explore the Yazonistore collection of considered everyday finds.">
-<title>Shop the collection — Yazonistore</title>
+<meta name="description" content="Shop the Yazonistore collection.">
+<title>Shop — Yazonistore</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
@@ -18,25 +18,26 @@
 <nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html" aria-current="page">Shop</a><a href="faq.html">FAQ</a></nav>
 <div class="header-actions"><button class="bag-button" type="button" data-open-bag aria-label="Open shopping bag">Bag <span data-bag-count>0</span></button></div>
 </header>
-<main class="shop-page-v2">
-<section class="shop-campaign" aria-label="The collection">
-<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=85" alt="Calm, thoughtfully styled modern interior" class="shop-campaign-image">
-<div class="shop-campaign-shade"></div>
-<div class="shop-campaign-copy"><p class="campaign-kicker">THE YAZONI COLLECTION</p><h1>Good things,<br><em>found here.</em></h1><p>Useful pieces for your desk, your space and the everyday in between.</p><a class="campaign-button" href="#the-collection">Browse the collection <span>↓</span></a></div>
-<div class="shop-campaign-caption"><span>THE EVERYDAY EDIT</span><span>01 — COLLECTION</span></div>
-</section>
-<section class="shop-catalogue section-wrap" id="the-collection">
-<div class="shop-intro shop-intro-v2"><div><p class="eyebrow">A LITTLE LOOK AROUND</p><h2>Shop the edit<span>.</span></h2><p>Thoughtful finds. No overcomplication.</p></div><div class="shop-count-note"><strong data-product-count>—</strong><span>pieces in the collection</span></div></div>
-<div class="shop-controls shop-controls-v2">
-<label class="search-field"><span>Find something</span><input id="shopSearch" type="search" placeholder="Search the collection…" aria-label="Search products"></label>
-<div class="category-filters" id="categoryFilters" aria-label="Filter products by category"><button type="button" class="filter-chip active" data-category="All">Everything</button><button type="button" class="filter-chip" data-category="Desk">Desk</button><button type="button" class="filter-chip" data-category="Everyday">Everyday</button><button type="button" class="filter-chip" data-category="Travel">Travel</button></div>
-<label class="sort-control">Sort by <select id="sortSelect"><option value="featured">Recommended</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name A–Z</option></select></label>
+<main class="minimal-shop section-wrap">
+<div class="minimal-shop-heading">
+<div><p class="eyebrow">THE YAZONI COLLECTION</p><h1>Shop <em>all.</em></h1></div>
+<p class="minimal-shop-subtitle">Useful things for everyday living.</p>
 </div>
-<div class="product-grid shop-grid shop-grid-v2" id="productGrid" aria-live="polite"></div>
-<div class="empty-state large-empty shop-empty-v2" id="emptyState"><span class="empty-kicker">A LITTLE TOO QUIET</span><h2>Nothing here just yet.</h2><p>Try another category or search. New finds will show up here as the collection grows.</p><button class="button button-outline" type="button" id="clearShopFilters">Clear filters <span>↗</span></button></div>
-<div class="shop-footnote"><span>✳</span> A growing collection of useful everyday things.</div>
-</section>
-<section class="shop-endnote"><p class="eyebrow">THE YAZONI APPROACH</p><p>Everyday things, <em>chosen with care.</em></p><a href="faq.html">Questions before you browse? Visit the FAQ ↗</a></section>
+<div class="minimal-shop-toolbar">
+<div class="category-filters" id="categoryFilters" aria-label="Filter products by category">
+<button type="button" class="filter-chip active" data-category="All">All products</button>
+<button type="button" class="filter-chip" data-category="Desk">Desk</button>
+<button type="button" class="filter-chip" data-category="Everyday">Everyday</button>
+<button type="button" class="filter-chip" data-category="Travel">Travel</button>
+</div>
+<div class="minimal-shop-tools">
+<label class="minimal-search"><span class="sr-only">Search products</span><input id="shopSearch" type="search" placeholder="Search products…" aria-label="Search products"><span aria-hidden="true">⌕</span></label>
+<label class="minimal-sort"><span class="sr-only">Sort products</span><select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name A–Z</option></select></label>
+</div>
+</div>
+<div class="minimal-result-line"><span><strong data-product-count>—</strong> products</span><span>Thoughtfully picked. Simply useful.</span></div>
+<div class="product-grid shop-grid minimal-product-grid" id="productGrid" aria-live="polite"></div>
+<div class="empty-state large-empty minimal-empty" id="emptyState"><h2>No products found.</h2><p>Try another search or category.</p><button class="button button-outline" type="button" id="clearShopFilters">Clear filters ↗</button></div>
 </main>
 <footer class="site-footer"><a class="wordmark" href="index.html">yazoni<span>.</span></a><div class="footer-links"><a href="shop.html">Shop</a><a href="faq.html">FAQ</a></div><div class="footer-bottom"><span>© <span data-year></span> Yazonistore</span><a href="admin.html">Store admin</a></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
