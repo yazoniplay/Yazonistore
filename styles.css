@@ -241,3 +241,75 @@ body{background:#fff;color:#111;font-size:14px}
  .category-tiles a+a{padding-left:0;border-left:0;border-top:1px solid #e5e5e5}
  .category-tiles b{right:5px;bottom:19px}
 }
+
+/* Homepage campaign layout inspired by editorial fashion retail, with original Yazonistore content */
+.site-header{height:72px;position:sticky;top:0;background:#fff;z-index:20}
+.desktop-nav{gap:clamp(12px,2vw,27px)}
+.desktop-nav a{font-size:11px;color:#171717}
+.campaign-hero{position:relative;min-height:min(690px,calc(100vh - 104px));height:620px;overflow:hidden;background:#333;color:#fff}
+.campaign-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%}
+.campaign-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.24) 48%,rgba(0,0,0,.03) 100%)}
+.campaign-hero-copy{position:absolute;left:var(--pad);top:50%;transform:translateY(-48%);max-width:570px}
+.campaign-kicker{font-size:10px;letter-spacing:.18em;font-weight:600;margin:0 0 24px}
+.campaign-hero-copy h1{font-size:clamp(48px,7vw,92px);line-height:.98;letter-spacing:-.075em;font-weight:600;margin:0 0 24px}
+.campaign-hero-copy>p:not(.campaign-kicker){font-size:14px;line-height:1.75;max-width:380px;color:#f0f0f0;margin:0 0 28px}
+.campaign-button{display:inline-flex;align-items:center;gap:42px;background:#fff;color:#111;padding:15px 18px;font-size:11px;font-weight:600;min-width:190px;justify-content:space-between}
+.campaign-button span{font-size:15px;font-weight:400}
+.campaign-index{position:absolute;right:var(--pad);bottom:28px;font-size:9px;letter-spacing:.15em;color:#fff}
+.campaign-products{padding-top:70px;padding-bottom:75px}
+.campaign-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:28px}
+.campaign-section-heading .eyebrow{margin-bottom:10px}
+.campaign-section-heading h2{font-size:clamp(27px,3.2vw,39px);line-height:1.1;letter-spacing:-.055em;font-weight:600;margin:0}
+.campaign-products .product-grid{margin-top:0}
+.campaign-products .product-image-wrap{aspect-ratio:4/4.8;background:#f2f2f2}
+.campaign-products .product-badge{left:10px;top:10px}
+.campaign-products .product-name{font-size:12px}
+.campaign-products .product-price{font-size:12px}
+.campaign-products .visible-add{margin-top:10px}
+.campaign-products .large-empty{padding:42px 15px;background:#f7f7f6;border:0}
+.campaign-products .empty-state h3{font-size:23px}
+.campaign-stories{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding-bottom:76px}
+.campaign-story{position:relative;display:block;min-height:480px;overflow:hidden;background:#333;color:#fff}
+.campaign-story>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.campaign-story:hover>img{transform:scale(1.025)}
+.story-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.02) 75%)}
+.story-copy{position:absolute;left:clamp(20px,3.5vw,46px);right:20px;bottom:34px;display:flex;flex-direction:column;align-items:flex-start}
+.story-copy small{font-size:9px;letter-spacing:.15em;margin-bottom:17px}
+.story-copy strong{font-size:clamp(31px,4vw,52px);line-height:1.02;letter-spacing:-.06em;font-weight:600}
+.story-cta{margin-top:24px;padding-bottom:6px;border-bottom:1px solid #ffffffb0;font-size:11px}
+.category-strip{padding-top:0;padding-bottom:78px}
+.category-strip .campaign-section-heading{margin-bottom:22px}
+.category-strip .category-tiles{border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.category-strip .category-tiles a{min-height:120px}
+.store-note{background:#f3f3f1;text-align:center;padding:70px 20px 74px}
+.store-note .eyebrow{margin-bottom:17px}
+.store-note>p:nth-child(2){font-size:clamp(28px,4vw,46px);letter-spacing:-.06em;font-weight:600;line-height:1.1;margin:0 0 19px}
+.store-note>a{font-size:11px;border-bottom:1px solid #777;padding-bottom:5px}
+@media(max-width:760px){
+ .site-header{height:64px}
+ .desktop-nav{gap:13px;overflow:auto;white-space:nowrap;margin-left:15px;margin-right:12px}
+ .desktop-nav a{font-size:10px}
+ .campaign-hero{height:560px;min-height:0}
+ .campaign-hero-image{object-position:57% center}
+ .campaign-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.08))}
+ .campaign-hero-copy{left:var(--pad);right:var(--pad);top:auto;bottom:70px;transform:none}
+ .campaign-hero-copy h1{font-size:clamp(45px,10vw,65px)}
+ .campaign-hero-copy>p:not(.campaign-kicker){font-size:12px;max-width:300px}
+ .campaign-index{bottom:20px;font-size:8px}
+ .campaign-products{padding-top:48px;padding-bottom:48px}
+ .campaign-section-heading{align-items:flex-end}
+ .campaign-section-heading h2{font-size:27px}
+ .campaign-stories{grid-template-columns:1fr;gap:10px;padding-bottom:50px}
+ .campaign-story{min-height:420px}
+ .story-copy{left:24px;bottom:25px}
+ .category-strip{padding-bottom:50px}
+ .category-strip .category-tiles a{min-height:94px}
+ .store-note{padding:52px 18px}
+}
+@media(max-width:430px){
+ .desktop-nav a:nth-child(4),.desktop-nav a:nth-child(5){display:none}
+ .campaign-hero{height:530px}
+ .campaign-button{min-width:175px;padding:13px 15px}
+ .campaign-stories{margin-left:0;margin-right:0}
+ .campaign-story{min-height:370px}
+}
