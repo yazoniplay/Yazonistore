@@ -1,22 +1,21 @@
-# Offcut — curated product store concept
+# Offcut — Yazonistore storefront
 
-A static, mobile-first storefront concept for a small collection of everyday finds.
+A multi-page, mobile-responsive storefront concept. The catalogue intentionally starts empty: there are no invented sample products or fake supplier claims.
 
-## Files
-- `index.html` — storefront, product detail modal, bag drawer, admin UI
-- `styles.css` — responsive editorial design
-- `app.js` — catalogue rendering, search, filters, bag, and local admin
+## Pages
+- `index.html` — homepage
+- `shop.html` — catalogue, category filters, search, and sorting
+- `product.html?id=PRODUCT_ID` — dedicated product-detail page
+- `bag.html` — shopping bag and subtotal preview
+- `about.html` — brand approach and product-selection criteria
+- `admin.html` — local catalogue management
+- `styles.css` — shared responsive design system
+- `app.js` — shared browser-side catalogue and bag behavior
 
-## Preview
-This project is a frontend prototype. It does not have a live payment provider, order backend, supplier integration, or newsletter service.
+## Current limitations
+The admin catalogue is stored in the current browser's local storage. It is not shared across visitors or devices, and this prototype has no secure admin login. The shopping bag is also browser-local. Checkout does not process payments, create orders, or contact suppliers. The image URLs used for the editorial page are design photography, not product listings.
 
-### Catalogue admin
-Use **Catalogue admin** in the footer to add, edit, delete, or reset products. The current prototype stores catalogue changes in the current browser's `localStorage`. Image uploads are compressed and stored locally in that same browser. This is useful for testing the interface, but changes are not shared with other visitors and can be lost if browser storage is cleared.
+Before taking real orders, connect a shared database and authenticated admin, set up secure image storage, choose and verify suppliers, confirm shipping and return terms, and integrate a payment provider with server-side order handling. Do not put private keys in browser JavaScript.
 
-Before launch, connect a shared database and private admin authentication, validate uploaded files on the server, and implement secure checkout, order handling, privacy information, and verified supplier/delivery details. Never place private API keys in frontend code.
-
-## Deploying a static preview
-The site can be served as static files. To publish with GitHub Pages, open the repository's **Settings → Pages** and choose the `main` branch and `/(root)` as the source. Static hosting does not make the catalogue shared or enable checkout.
-
-## Design references
-The visual direction takes broad inspiration from real editorial ecommerce patterns: restrained type, product-first imagery, useful category navigation, and clear product information. It is not a copy of another brand's assets or layout.
+## Static preview
+On GitHub, go to **Settings → Pages** and publish the `main` branch from `/(root)`. Every page is a separate HTML file and links to the others through ordinary navigation.
