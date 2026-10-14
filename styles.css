@@ -725,3 +725,64 @@ body.no-scroll{overflow:hidden}
  .detail-buybox .buybox-price{font-size:34px}
  .detail-buybox .button{min-height:54px;font-size:14px}
 }
+
+
+/* Product detail layout correction: spacious two-column layout, store palette */
+.product-page-main{background:var(--paper)!important;padding:30px var(--pad) 85px!important}
+.product-page-main>.back-link{font-size:13px;margin:0 0 18px;color:var(--muted)}
+.product-detail-page{max-width:1500px!important;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr)!important;gap:30px!important;align-items:start;margin:0 auto!important}
+.detail-gallery,.detail-copy,.detail-buybox{background:var(--white)!important;border:1px solid var(--line)!important;border-radius:3px!important;box-shadow:none!important;min-width:0}
+.detail-gallery{grid-column:1!important;grid-row:1 / span 2!important;position:static!important;padding:22px!important}
+.detail-photo{position:relative;background:#efeee6!important;border:1px solid var(--line)!important;border-radius:0!important;min-height:0!important;overflow:hidden}
+.detail-photo img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:1/1!important;min-height:0!important;max-height:none!important;object-fit:contain!important;object-position:center!important;padding:16px!important;background:#efeee6!important;opacity:1!important}
+.detail-photo.image-unavailable:after{content:"Product image unavailable";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#efeee6;color:var(--muted);font-size:14px}
+.detail-thumbnails{display:flex;gap:12px;padding:16px 0 2px;overflow-x:auto}
+.detail-thumb{flex:0 0 76px!important;width:76px!important;height:76px!important;padding:5px!important;border:1px solid var(--line)!important;border-radius:0!important;background:#efeee6!important;overflow:hidden}
+.detail-thumb.active,.detail-thumb:focus-visible{border:2px solid var(--olive)!important;padding:4px!important;outline:none}
+.detail-thumb img{width:100%;height:100%;object-fit:contain;background:#efeee6}
+.detail-copy{grid-column:2!important;grid-row:1!important;position:static!important;padding:30px!important}
+.detail-copy .eyebrow{font-size:12px!important;letter-spacing:.12em!important;color:var(--olive)!important;margin-bottom:17px!important}
+.detail-copy h1{font-family:var(--serif)!important;font-size:clamp(34px,3.2vw,48px)!important;line-height:1.08!important;letter-spacing:-.04em!important;font-weight:500!important;color:var(--ink)!important;margin:0 0 20px!important}
+.detail-copy .detail-price{font-size:15px!important;line-height:1.7!important;color:var(--muted)!important;border-color:var(--line)!important;padding-bottom:20px!important;margin-bottom:22px!important}
+.detail-copy .detail-description{font-size:16px!important;line-height:1.85!important;color:#5e6057!important;margin-bottom:25px!important}
+.detail-copy .detail-fineprint,.detail-gallery .detail-fineprint{font-size:12px!important;line-height:1.8!important;color:var(--muted)!important;max-width:none!important;margin-top:20px!important}
+.detail-copy .product-trust{border-color:var(--line)!important;margin-top:26px!important;padding-top:3px!important}
+.detail-copy .product-trust p{grid-template-columns:28px 1fr!important;column-gap:10px!important;margin:18px 0!important}
+.detail-copy .product-trust p>span{color:var(--olive)!important;font-size:20px!important}
+.detail-copy .product-trust b{font-size:14px!important;color:var(--ink)!important}
+.detail-copy .product-trust small{font-size:13px!important;line-height:1.7!important;color:var(--muted)!important}
+.detail-buybox{grid-column:2!important;grid-row:2!important;position:static!important;padding:25px 30px!important;margin:0!important}
+.detail-buybox .buybox-label{font-size:14px!important;color:var(--muted)!important;margin-bottom:8px!important}
+.detail-buybox .buybox-price{font-size:36px!important;color:var(--ink)!important;margin-bottom:12px!important}
+.detail-buybox .buybox-price-note,.detail-buybox .buybox-small{font-size:12px!important;line-height:1.8!important;color:var(--muted)!important}
+.detail-buybox .buybox-divider{background:var(--line)!important;margin:20px 0!important}
+.detail-buybox .buybox-note{font-size:14px!important;line-height:1.8!important;color:#62645a!important;margin-bottom:20px!important}
+.detail-buybox .button{width:100%!important;min-height:54px!important;border-radius:0!important;font-size:14px!important;margin-top:12px!important;justify-content:center!important}
+.detail-buybox .button-dark{background:var(--olive)!important;border-color:var(--olive)!important;color:var(--white)!important}
+.detail-buybox .button-dark:hover{background:#62694f!important;border-color:#62694f!important}
+.detail-buybox .button-outline{background:transparent!important;color:var(--ink)!important;border-color:var(--line)!important}
+.detail-buybox .button-outline:hover{background:#eeeee5!important;border-color:var(--olive)!important}
+@media(max-width:950px){
+ .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:18px!important}
+ .detail-gallery{grid-column:1!important;grid-row:1 / span 2!important;padding:15px!important}
+ .detail-copy{grid-column:2!important;grid-row:1!important;padding:22px!important}
+ .detail-buybox{grid-column:2!important;grid-row:2!important;padding:22px!important}
+ .detail-copy h1{font-size:clamp(30px,4vw,40px)!important}
+ .detail-copy .detail-description{font-size:14px!important}
+}
+@media(max-width:680px){
+ .product-page-main{padding:20px 14px 48px!important}
+ .product-detail-page{grid-template-columns:minmax(0,1fr)!important;gap:13px!important;margin-top:12px!important}
+ .detail-gallery,.detail-copy,.detail-buybox{grid-column:1!important;grid-row:auto!important;position:static!important}
+ .detail-gallery{padding:12px!important}
+ .detail-photo img{aspect-ratio:1/1!important;min-height:0!important;max-height:none!important;padding:8px!important}
+ .detail-thumbnails{gap:9px;padding-top:12px}
+ .detail-thumb{flex-basis:68px!important;width:68px!important;height:68px!important}
+ .detail-copy{padding:23px 20px!important}
+ .detail-copy h1{font-size:clamp(32px,8vw,40px)!important}
+ .detail-copy .detail-description{font-size:15px!important}
+ .detail-copy .product-trust b{font-size:13px!important}
+ .detail-copy .product-trust small{font-size:12px!important}
+ .detail-buybox{padding:22px 20px!important}
+ .detail-buybox .buybox-price{font-size:34px!important}
+}
