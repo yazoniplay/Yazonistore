@@ -38,6 +38,6 @@ $("#productForm")?.addEventListener("submit",async e=>{e.preventDefault();if(!ad
 $("#cancelEdit")?.addEventListener("click",resetForm);$("#clearCatalogue")?.addEventListener("click",async()=>{if(!adminMode)return toast("Admin approval required.");if(confirm("Delete every product from the shared catalogue for all visitors?")){const {error}=await db.from("products").delete().neq("id","__never_matches__");if(error){toast(error.message);return}bag=[];saveBag();await loadCatalogue();resetForm();toast("Shared catalogue cleared.")}});$("#checkoutButton")?.addEventListener("click",()=>toast("Checkout is not connected. No payment has been taken."));
 $$("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeBag()});ensureBagDrawer();
-$("[data-open-bag]").forEach(button=>button.addEventListener("click",e=>{e.preventDefault();openBag()}));
+$("[data-open-bag]").forEach(button=>button.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openBag()}));
 if($("#adminAuth")){refreshAuth()}else{loadCatalogue()}
 })();
