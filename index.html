@@ -1,32 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yazonistore — Shop everyday essentials</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yazonistore — Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="announcement">Yazonistore <span>·</span> Browse the latest products</div>
+<div class="announcement">Yazonistore <span>—</span> Independent online shop</div>
 <header class="site-header">
-<a class="wordmark" href="index.html">yazoni<span>.</span></a>
-<nav class="desktop-nav"><a href="shop.html">Shop</a><a href="about.html">About</a></nav>
-<div class="header-actions"><a class="bag-button" href="bag.html">Bag <span data-bag-count>0</span></a></div>
+  <a class="wordmark" href="index.html" aria-label="Yazonistore home">yazoni<span>.</span></a>
+  <nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="about.html">About</a></nav>
+  <div class="header-actions"><a class="bag-button" href="bag.html">Bag <span data-bag-count>0</span></a></div>
 </header>
 <main>
-<section class="store-hero">
-<div class="store-hero-copy"><p class="eyebrow">THE YAZONISTORE SHOP</p><h1>Good finds.<br>Everyday prices.</h1><p>Browse the collection and find something useful for your day-to-day.</p><a class="button button-dark" href="shop.html">Shop all products <span>→</span></a></div>
-<div class="store-hero-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1400&q=85" alt="Everyday objects arranged on a desk"></div>
-</section>
-<section class="store-categories section-wrap"><div class="store-section-head"><div><p class="eyebrow">BROWSE BY CATEGORY</p><h2>Shop the collection</h2></div><a class="underlined-link" href="shop.html">View everything →</a></div>
-<div class="category-tiles"><a href="shop.html?category=Everyday"><span>01</span><strong>Everyday</strong><small>Useful things for daily life</small></a><a href="shop.html?category=Desk"><span>02</span><strong>Desk & tech</strong><small>For work, study and setup</small></a><a href="shop.html?category=Travel"><span>03</span><strong>Travel</strong><small>Things to take with you</small></a></div>
-</section>
-<section class="section-wrap home-shop"><div class="store-section-head"><div><p class="eyebrow">IN THE SHOP</p><h2>Featured products</h2></div><a class="underlined-link" href="shop.html">Shop all →</a></div><div id="homeProducts" class="product-grid"></div>
-<div class="empty-state" id="homeEmpty"><h3>Products coming soon</h3><p>There are no products listed yet. Check back after the catalogue has been updated.</p><a class="button button-dark" href="shop.html">Browse the shop</a></div>
-</section>
+  <section class="store-hero">
+    <div class="store-hero-copy">
+      <p class="eyebrow">THE ONLINE SHOP</p>
+      <h1>Yazonistore<span class="hero-period">.</span></h1>
+      <p>Browse what’s available. No filler listings — just products added to the shop when they’re ready.</p>
+      <a class="button button-dark" href="shop.html">Shop all products <span>→</span></a>
+      <p class="hero-meta">New products will appear here as the catalogue grows.</p>
+    </div>
+    <div class="store-hero-image type-led" aria-label="Yazonistore wordmark artwork">
+      <span class="type-led-small">YAZONI / STORE</span>
+      <span class="type-led-word">y.</span>
+      <span class="type-led-bottom">GOOD THINGS, NO NOISE.</span>
+    </div>
+  </section>
+  <section class="section-wrap home-shop">
+    <div class="store-section-head">
+      <div><p class="eyebrow">AVAILABLE NOW</p><h2>Products</h2></div>
+      <a class="underlined-link" href="shop.html">View all products →</a>
+    </div>
+    <div id="homeProducts" class="product-grid"></div>
+    <div class="empty-state large-empty" id="homeEmpty">
+      <p class="empty-kicker">THE CATALOGUE IS EMPTY</p>
+      <h3>Nothing listed just yet.</h3>
+      <p>When products are added, you’ll find them here.</p>
+      <a class="underlined-link" href="shop.html">Visit the shop →</a>
+    </div>
+  </section>
+  <section class="store-categories section-wrap">
+    <div class="store-section-head"><div><p class="eyebrow">FIND YOUR WAY</p><h2>Shop by category</h2></div></div>
+    <div class="category-tiles">
+      <a href="shop.html?category=Everyday"><span>01</span><strong>Everyday</strong><small>Daily essentials</small><b>↗</b></a>
+      <a href="shop.html?category=Desk"><span>02</span><strong>Desk &amp; tech</strong><small>Work and study</small><b>↗</b></a>
+      <a href="shop.html?category=Travel"><span>03</span><strong>Travel</strong><small>On the go</small><b>↗</b></a>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><a class="wordmark" href="index.html">yazoni<span>.</span></a><div class="footer-links"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="bag.html">Bag</a></div><div class="footer-bottom"><span>© <span data-year></span> Yazonistore</span><a href="admin.html">Store admin</a></div></footer>
+<footer class="site-footer">
+  <a class="wordmark" href="index.html">yazoni<span>.</span></a>
+  <div class="footer-links"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="bag.html">Bag</a></div>
+  <div class="footer-bottom"><span>© <span data-year></span> Yazonistore</span><a href="admin.html">Store admin</a></div>
+</footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
-</body></html>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
