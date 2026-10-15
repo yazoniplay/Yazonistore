@@ -850,3 +850,32 @@ body:has(.product-page-main){background:#f5f3ed}
  .detail-buybox{padding:22px!important}
  .detail-buybox .buybox-price{font-size:36px!important}
 }
+
+
+/* Yazonistore conversion-focused product page — truthful, no fabricated discounts or reviews */
+.detail-photo{position:relative!important}
+.detail-image-label{position:absolute;left:16px;bottom:16px;background:rgba(255,254,250,.92);color:#34382e;padding:9px 12px;font-size:9px;letter-spacing:.14em;font-weight:700}
+.detail-new-label{display:flex;align-items:center;gap:8px;margin:0 0 15px;color:#6d7657;font-size:9px;letter-spacing:.14em;font-weight:700}
+.detail-new-label span{width:7px;height:7px;background:#7d8664;border-radius:50%;display:inline-block}
+.detail-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:26px 0 18px}
+.detail-highlight{background:#eeeee6;border:1px solid #e2e2d8;padding:15px 12px;min-height:126px}
+.detail-highlight-icon{display:block;color:#747b60;font-size:18px;margin-bottom:14px}
+.detail-highlight strong{display:block;font-size:11px;line-height:1.4;font-weight:700}
+.detail-highlight p{font-size:10px;line-height:1.65;color:#777970;margin:6px 0 0}
+.detail-spec-note{font-size:10px;line-height:1.75;color:#696b60;background:#f0eee5;border-left:2px solid #8b9177;padding:12px 14px;margin:14px 0}
+.detail-review-note{display:flex;align-items:flex-start;gap:12px;border-top:1px solid #dcdcd2;padding-top:17px;margin-top:20px}
+.detail-review-mark{font-size:17px;color:#777d60}
+.detail-review-note strong{font-size:11px;display:block;margin:1px 0 5px}
+.detail-review-note p{font-size:10px;line-height:1.7;color:#777970;margin:0}
+.detail-buybox-title{font-family:var(--serif);font-size:23px;line-height:1.2;letter-spacing:-.035em;margin:0 0 10px}
+.detail-buybox .button{min-height:52px}
+.detail-buybox .button-outline span{font-size:14px}
+@media(max-width:700px){
+ .detail-highlights{gap:7px;margin:20px 0 15px}
+ .detail-highlight{padding:12px 9px;min-height:116px}
+ .detail-highlight-icon{margin-bottom:10px}
+ .detail-highlight strong{font-size:10px}
+ .detail-highlight p{font-size:9px}
+ .detail-image-label{left:11px;bottom:11px;font-size:8px}
+ .detail-buybox-title{font-size:21px}
+}
