@@ -922,3 +922,13 @@ body:has(.product-page-main){background:#f5f3ed}
  .store-preferences label>span{font-size:7px}
  .store-preferences select,.store-preferences label:first-child select{font-size:8px}
 }
+
+
+/* PayPal checkout actions */
+.button-paypal{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:50px;margin:5px 0 12px;padding:12px 18px;border:1px solid #e8b300;border-radius:3px;background:#ffc439;color:#142c5b;font:700 12px/1.2 "DM Sans",sans-serif;text-align:center;text-decoration:none;transition:filter .18s ease,transform .18s ease}
+.button-paypal:hover{filter:brightness(.97);transform:translateY(-1px)}
+.button-paypal:focus-visible{outline:2px solid #142c5b;outline-offset:3px}
+.product-card-actions{display:flex;flex-direction:column;gap:2px;margin-top:12px}
+.product-card-actions .quick-add{width:100%}
+.product-card-actions .product-buy-now{margin:0 0 8px;min-height:42px;font-size:10px}
+.product-card-actions .button-paypal{margin-bottom:0}
