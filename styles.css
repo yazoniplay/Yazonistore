@@ -932,3 +932,27 @@ body:has(.product-page-main){background:#f5f3ed}
 .product-card-actions .quick-add{width:100%}
 .product-card-actions .product-buy-now{margin:0 0 8px;min-height:42px;font-size:10px}
 .product-card-actions .button-paypal{margin-bottom:0}
+
+/* Order management */
+.admin-orders{margin-top:52px;padding-top:34px;border-top:1px solid var(--line)}
+.admin-orders .admin-list-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+.admin-orders .admin-list-heading .eyebrow{margin:0 0 9px}
+.admin-orders .admin-list-heading h2{font:500 clamp(30px,4vw,42px)/1.1 var(--serif);letter-spacing:-.04em;margin:0}
+.admin-orders-note{max-width:700px;color:var(--muted);font-size:11px;line-height:1.75}
+.admin-orders-summary{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.admin-orders-summary span{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--white);padding:10px 13px;font-size:10px;color:var(--muted)}
+.admin-orders-summary strong{font-size:14px;color:var(--ink)}
+.admin-order-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;padding:20px 0;border-top:1px solid var(--line)}
+.admin-order-main{min-width:0}.admin-order-top{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:9px}
+.admin-order-id{font-size:11px;font-weight:700;overflow-wrap:anywhere}
+.admin-order-pill{display:inline-flex;align-items:center;border-radius:30px;padding:5px 8px;background:#e8e9df;color:#454a3e;font-size:9px;text-transform:uppercase;letter-spacing:.06em}
+.admin-order-meta{display:flex;flex-wrap:wrap;gap:7px 18px;color:var(--muted);font-size:10px;line-height:1.7}
+.admin-order-items{margin:12px 0 0;padding:0;list-style:none;font-size:11px;line-height:1.8}
+.admin-order-items li{display:flex;gap:12px;justify-content:space-between;max-width:680px}
+.admin-order-actions{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:150px}
+.admin-order-total{font-size:15px;font-weight:700;white-space:nowrap}
+.admin-order-actions label{display:flex;flex-direction:column;gap:5px;width:100%;font-size:9px;color:var(--muted)}
+.admin-order-actions select{width:100%;min-height:36px;border:1px solid var(--line);background:var(--white);padding:7px;font-size:10px}
+.admin-order-actions button{font-size:10px;min-height:35px;width:100%}
+.admin-orders-list .empty-state{border-top:1px solid var(--line);padding:45px 15px}
+@media(max-width:650px){.admin-order-card{grid-template-columns:1fr}.admin-order-actions{align-items:stretch;min-width:0}.admin-order-actions select,.admin-order-actions button{width:100%}.admin-orders .admin-list-heading{align-items:flex-start;flex-direction:column}}

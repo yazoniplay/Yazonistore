@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Confirming your payment · Yazonistore</title>
-<link rel="stylesheet" href="styles.css?v=paypal-cart-20261015a">
+<link rel="stylesheet" href="styles.css?v=premium-20261016a">
 <style>
 .checkout-state{max-width:680px;margin:12vh auto;padding:36px 24px;text-align:center;background:#fff;border:1px solid #e8e4dc;border-radius:20px}.checkout-state h1{font-size:clamp(2rem,6vw,3rem);letter-spacing:-.04em}.checkout-state p{line-height:1.65;color:#625f58}.checkout-state .button{display:inline-flex;margin:10px 5px}.checkout-state[aria-busy=true] .status-dot{animation:pulse 1s infinite}@keyframes pulse{50%{opacity:.25}}
 </style>
@@ -40,7 +40,7 @@ try{
  localStorage.removeItem("offcut.bag.v2");
  root.setAttribute("aria-busy","false");
  root.querySelector("h1").textContent="Payment confirmed";
- message.textContent="PayPal confirmed your payment. Your Yazonistore order is complete. Save your PayPal receipt for your records.";
+ message.textContent=data.orderRecorded===false?"PayPal confirmed your payment, but the store could not save the order record automatically. Do not pay again. Save your PayPal receipt and contact Yazonistore support.":"PayPal confirmed your payment. Your Yazonistore order is complete. Save your PayPal receipt for your records.";
  root.insertAdjacentHTML("beforeend",'<p><a class="button button-dark" href="shop.html">Continue shopping ↗</a></p>');
 }catch(error){
  root.setAttribute("aria-busy","false");

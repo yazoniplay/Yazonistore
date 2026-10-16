@@ -8,7 +8,7 @@ A multi-page, mobile-responsive storefront connected to the Supabase project **Y
 - `product.html?id=PRODUCT_ID` — dedicated product-detail page
 - `bag.html` — browser-local shopping bag and subtotal preview
 - `about.html` — brand approach and product-selection criteria
-- `admin.html` — sign-in and shared catalogue management
+- `admin.html` — protected sign-in, shared catalogue management, recent paid orders and fulfilment status
 - `styles.css` — shared responsive design system
 - `app.js` — Supabase client, product loading, bag behavior, and admin operations
 
@@ -22,8 +22,10 @@ The database contains:
 
 Visitors can read active products. Only users whose Auth ID is in `store_admins` can manage the catalogue or upload product images. Create an account through `admin.html` and then add that user's Auth ID to `store_admins` (or ask the project owner to authorize the account). Creating an account alone does not grant admin rights.
 
-## Still not connected
-Checkout does not process payments, create orders, or contact suppliers. The bag is saved in the current browser. Before accepting real orders, choose and verify suppliers, confirm shipping and return terms, and integrate a payment provider with server-side order handling.
+## Checkout and orders
+The storefront starts PayPal checkout through the `paypal-create-order` Edge Function and verifies/captures the order through `paypal-capture-order`. Completed captures are written to `public.orders` by the server using the service-role key. The service-role key must never be exposed in browser code.
+
+The admin page shows up to 100 recent captured orders and lets approved admins update fulfilment status. The order table is protected by Row Level Security; only approved store admins can read or update order records. Confirm shipping, returns, taxes and supplier fulfilment before accepting real customer orders.
 
 ## GitHub Pages
 On GitHub, go to **Settings → Pages** and publish the `main` branch from `/(root)`. All storefront sections are separate HTML pages linked through ordinary navigation.
