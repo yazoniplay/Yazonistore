@@ -32,7 +32,7 @@ if(!orderID){
 try{
  const response=await fetch("https://ppaknwuwiublxogclqdw.supabase.co/functions/v1/paypal-capture-order",{
   method:"POST",
-  headers:{"Content-Type":"application/json","apikey":"sb_publishable_3_4-b-tj5VnnD-OR2bgX_g_8mktyac9"},
+  headers:{"Content-Type":"application/json","apikey":"sb_publishable_3_4_b-tj5VnnD-OR2bgX_g_8mktyac9"},
   body:JSON.stringify({orderID})
  });
  const data=await response.json().catch(()=>({}));
