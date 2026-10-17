@@ -63,10 +63,45 @@ function installStorefrontShell(){
 @media(max-width:900px){.store-global-header{grid-template-columns:40px minmax(0,1fr) auto!important}.store-global-menu-toggle{display:flex!important;width:40px!important;height:40px!important}.store-global-brand{font-size:13px!important}.store-global-links{display:none!important}.store-global-actions{gap:10px!important}.store-global-mobile-nav{top:68px!important}.store-global-search span{display:none!important}.store-global-bag{padding:10px 12px!important}}
 @media(max-width:480px){.bag-drawer{width:100vw!important}.drawer-header{padding:20px 18px 16px!important}.bag-items{padding:2px 18px 18px!important}.bag-bottom{padding:16px 18px max(18px,env(safe-area-inset-bottom))!important}.bag-line{grid-template-columns:72px minmax(0,1fr) auto!important;gap:11px!important}.bag-line>img{width:72px!important;height:88px!important}}
 `;
-  document.head.appendChild(css);
+  css.textContent += `
+/* Classic Shopify storefront header: charcoal, warm off-white, functional dropdown/search. */
+:root{--store-paper:#f7f5f0;--store-white:#fffefa;--store-surface:#eeece6;--store-ink:#262626;--store-muted:#686862;--store-line:#dedbd3;--store-accent:#262626}
+html,body{background:var(--store-paper)!important;color:var(--store-ink)!important}
+.store-announcement,.luxury-announcement,.announcement{background:#262626!important;color:#f7f5f0!important}
+.store-global-header{background:#f7f5f0!important;color:#262626!important;border-bottom:1px solid #dedbd3!important;grid-template-columns:auto minmax(0,1fr) auto!important;gap:clamp(18px,3vw,44px)!important;padding:0 clamp(18px,5vw,76px)!important}
+.store-global-brand{font-size:16px!important;letter-spacing:.12em!important;font-weight:800!important}
+.store-global-brand span{color:#262626!important}
+.store-global-links{justify-content:center!important;gap:clamp(18px,2.8vw,38px)!important}
+.store-global-links>a,.store-global-dropdown-trigger{font-size:12px!important;font-weight:600!important;color:#262626!important}
+.store-global-dropdown-trigger span{font-size:15px}
+.store-global-dropdown-panel{top:calc(100% + 12px)!important;background:#fffefa!important;border:1px solid #dedbd3!important;box-shadow:0 16px 32px #00000012!important}
+.store-global-dropdown-panel a{color:#262626!important}
+.store-global-actions{gap:18px!important}
+.store-global-search-toggle{display:inline-flex!important;align-items:center;justify-content:center;width:40px;height:40px;border:0;background:transparent;color:#262626;padding:8px;cursor:pointer}
+.store-global-search-toggle svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6}
+.store-global-bag{background:#262626!important;border-color:#262626!important;color:#f7f5f0!important;border-radius:0!important;padding:12px 17px!important}
+.store-global-search-panel{position:absolute;top:100%;left:0;right:0;z-index:120;background:#f7f5f0;border-bottom:1px solid #dedbd3;padding:20px clamp(18px,5vw,76px);box-shadow:0 16px 25px #0000000d}
+.store-global-search-form{display:flex;align-items:center;gap:14px;max-width:900px;margin:0 auto;border-bottom:1px solid #262626}
+.store-global-search-form input{width:100%;min-width:0;border:0!important;outline:0!important;background:transparent!important;color:#262626!important;padding:13px 2px!important;font-size:18px!important}
+.store-global-search-form input::placeholder{color:#777}
+.store-global-search-form button{border:0;background:transparent;color:#262626;padding:12px;font-size:12px;font-weight:700;cursor:pointer}
+.store-global-search-panel[hidden]{display:none!important}
+.store-global-mobile-nav{background:#f7f5f0!important;border-color:#dedbd3!important}
+.store-global-mobile-nav a{color:#262626!important;border-color:#dedbd3!important}
+@media(max-width:900px){
+ .store-global-header{grid-template-columns:40px minmax(0,1fr) auto!important;gap:12px!important;padding:0 16px!important;height:68px!important}
+ .store-global-menu-toggle{display:flex!important;border:0!important;padding:8px!important}
+ .store-global-brand{justify-self:start!important;font-size:14px!important}
+ .store-global-links{display:none!important}
+ .store-global-actions{gap:8px!important}
+ .store-global-bag{padding:10px 12px!important}
+ .store-global-mobile-nav{top:68px!important}
+ .store-global-search-panel{padding:14px 18px}
+ .store-global-search-form input{font-size:16px!important}
+}`;\n  document.head.appendChild(css);
   const header=document.createElement("header");
   header.className="store-global-header";
-  header.innerHTML='<button class="store-global-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="storeGlobalMobileNav"><span></span><span></span></button><a class="store-global-brand" href="index.html" aria-label="Yazonistore home">YAZONISTORE<span>.</span></a><nav class="store-global-links" aria-label="Main navigation"><div class="store-global-dropdown"><a class="store-global-dropdown-trigger" href="shop.html" aria-haspopup="true">Shop <span aria-hidden="true">⌄</span></a><div class="store-global-dropdown-panel"><a href="shop.html">Shop all products</a><a href="index.html#products">Featured products</a><a href="shipping.html">Shipping &amp; returns</a></div></div><a href="about.html">Our story</a><a href="faq.html">Help</a></nav><div class="store-global-actions"><a class="store-global-search" href="shop.html" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg><span>Search</span></a><button class="store-global-bag" type="button" data-open-bag aria-label="Open shopping bag">Bag <span data-bag-count>0</span></button></div>';
+  header.innerHTML='<button class="store-global-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="storeGlobalMobileNav"><span></span><span></span><span></span></button><a class="store-global-brand" href="index.html" aria-label="Yazonistore home">YAZONISTORE<span>.</span></a><nav class="store-global-links" aria-label="Main navigation"><div class="store-global-dropdown"><a class="store-global-dropdown-trigger" href="shop.html" aria-haspopup="true">Shop <span aria-hidden="true">⌄</span></a><div class="store-global-dropdown-panel"><a href="shop.html">Shop all products</a><a href="index.html#products">Featured products</a><a href="shipping.html">Shipping &amp; returns</a></div></div><a href="about.html">Our story</a><a href="faq.html">Help</a></nav><div class="store-global-actions"><button class="store-global-search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="storeGlobalSearchPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></button><button class="store-global-bag" type="button" data-open-bag aria-label="Open shopping bag">Bag <span data-bag-count>0</span></button></div>';
   oldHeader.replaceWith(header);
   const mobile=document.createElement("nav");
   mobile.id="storeGlobalMobileNav";
@@ -74,6 +109,13 @@ function installStorefrontShell(){
   mobile.setAttribute("aria-label","Store navigation");
   mobile.innerHTML='<a href="shop.html">Shop all <span>↗</span></a><a href="about.html">Our story <span>↗</span></a><a href="faq.html">Help &amp; FAQ <span>↗</span></a><a href="shipping.html">Shipping &amp; returns <span>↗</span></a><a href="contact.html">Contact us <span>↗</span></a>'+(isAdmin?'<a href="admin.html">Store admin <span>↗</span></a>':'');
   header.insertAdjacentElement("afterend",mobile);
+  const searchPanel=document.createElement("section");
+  searchPanel.id="storeGlobalSearchPanel";searchPanel.className="store-global-search-panel";searchPanel.hidden=true;
+  searchPanel.innerHTML='<form class="store-global-search-form" role="search" action="shop.html" method="get"><input type="search" name="q" placeholder="Search products…" aria-label="Search products" autocomplete="off"><button type="submit">SEARCH ↗</button></form>';
+  mobile.insertAdjacentElement("afterend",searchPanel);
+  const searchToggle=header.querySelector(".store-global-search-toggle"),searchInput=searchPanel.querySelector("input");
+  searchToggle.addEventListener("click",()=>{const open=searchToggle.getAttribute("aria-expanded")!=="true";searchToggle.setAttribute("aria-expanded",String(open));searchToggle.setAttribute("aria-label",open?"Close search":"Open search");searchPanel.hidden=!open;if(open)requestAnimationFrame(()=>searchInput.focus());});
+  searchPanel.querySelector("form").addEventListener("submit",e=>{if(!searchInput.value.trim()){e.preventDefault();searchInput.focus();}});
   const toggle=header.querySelector(".store-global-menu-toggle");
   toggle.addEventListener("click",()=>{
     const open=toggle.getAttribute("aria-expanded")!=="true";
@@ -106,7 +148,7 @@ window.googleTranslateElementInit=function(){if(!window.google?.translate?.Trans
 function loadGoogleTranslate(){if(document.querySelector('script[data-google-translate]'))return;const s=document.createElement("script");s.src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";s.async=true;s.dataset.googleTranslate="true";document.head.appendChild(s);}
 
 const requestedCategory=new URLSearchParams(location.search).get("category");
-let products=[],orders=[],bag=read(BAG,[]),category=["Desk","Everyday","Travel"].includes(requestedCategory)?requestedCategory:"All",query="",adminMode=false,session=null;
+let products=[],orders=[],bag=read(BAG,[]),category=["Desk","Everyday","Travel"].includes(requestedCategory)?requestedCategory:"All",query=(new URLSearchParams(location.search).get("q")||"").trim().toLowerCase(),adminMode=false,session=null;
 const saveBag=()=>localStorage.setItem(BAG,JSON.stringify(bag));
 if($("#shopSearch"))$("#shopSearch").value=query;
 function ensureBagDrawer(){if($("#bagDrawer"))return;document.body.insertAdjacentHTML("beforeend",'<div class="bag-overlay" id="bagOverlay" hidden></div><aside class="bag-drawer" id="bagDrawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span data-drawer-count>(0)</span></h2></div><button class="close-button" type="button" data-close-bag aria-label="Close bag">×</button></div><div class="bag-items" id="bagDrawerItems"></div><div class="bag-bottom"><div class="subtotal"><span>Subtotal</span><strong id="bagDrawerSubtotal">0 kr</strong></div><p>Delivery is calculated when fulfilment is available.</p><button class="button button-dark full-width" id="drawerCheckoutButton" type="button">Continue <span>↗</span></button><small>Secure PayPal checkout supports multiple products and quantities.</small><a class="drawer-view-bag" href="bag.html">View full bag details ↗</a></div></aside>')}
@@ -164,7 +206,7 @@ document.addEventListener("click",async e=>{const openBagButton=e.target.closest
 document.addEventListener("click",async e=>{const refresh=e.target.closest?.("#refreshOrders");if(refresh){await loadOrders();return}const save=e.target.closest?.("[data-save-order]");if(save){await saveOrderStatus(save.dataset.saveOrder);return}});
 $("#shopSearch")?.addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();renderShop()});$("#sortSelect")?.addEventListener("change",renderShop);$("#clearShopFilters")?.addEventListener("click",()=>{category="All";query="";if($("#shopSearch"))$("#shopSearch").value="";$$(".filter-chip").forEach(x=>x.classList.toggle("active",x.dataset.category==="All"));renderShop()});
 $("#productForm")?.addEventListener("submit",async e=>{e.preventDefault();if(!adminMode)return toast("Sign in with an approved store admin account first.");const btn=$("#saveProduct");btn.disabled=true;try{const id=$("#editId").value,old=id?product(id):null,files=[...($("#productUpload").files||[])],uploaded=await Promise.all(files.map(uploadImage)),entered=$("#productImages").value.split(String.fromCharCode(10)).flatMap(x=>x.split(",")).map(x=>x.trim()).filter(Boolean);if(entered.some(x=>!(x.startsWith("https://")||x.startsWith("http://"))))throw Error("Every image URL must start with https:// or http://.");const images=uploaded.length||entered.length?[...entered,...uploaded]:(old?.images||[]);if(!images.length)throw Error("Add at least one product image URL or upload one or more images.");const imageUrl=images[0];const p={id:id||"product-"+Date.now().toString(36),name:$("#productName").value.trim(),price:Number($("#productPrice").value),category:$("#productCategory").value,description:$("#productDescription").value.trim(),image_url:imageUrl,images,featured:$("#productFeatured").checked,active:true,updated_at:new Date().toISOString()};if(!p.name||!p.description||!Number.isFinite(p.price)||p.price<=0)throw Error("Check the product name, description, and price.");const result=old?await db.from("products").update(p).eq("id",id).select().single():await db.from("products").insert(p).select().single();if(result.error)throw result.error;await loadCatalogue();resetForm();toast(old?"Product updated across the store.":"Product published to the store.")}catch(err){console.error(err);toast(err.message||"Could not save product.")}finally{btn.disabled=false}});
-$("#cancelEdit")?.addEventListener("click",resetForm);$("#clearCatalogue")?.addEventListener("click",async()=>{if(!adminMode)return toast("Admin approval required.");if(confirm("Delete every product from the shared catalogue for all visitors?")){const {error}=await db.from("products").delete().neq("id","__never_matches__");if(error){toast(error.message);return}bag=[];saveBag();await loadCatalogue();resetForm();toast("Shared catalogue cleared.")}});$("#checkoutButton")?.addEventListener("click",()=>startCheckout());document.addEventListener("click",e=>{if(e.target.closest("#drawerCheckoutButton"))startCheckout()});document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeBag();const nav=document.querySelector("#storeGlobalMobileNav"),toggle=document.querySelector(".store-global-menu-toggle");if(nav&&toggle){nav.classList.remove("is-open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Open menu");document.body.classList.remove("no-scroll")}}});
+$("#cancelEdit")?.addEventListener("click",resetForm);$("#clearCatalogue")?.addEventListener("click",async()=>{if(!adminMode)return toast("Admin approval required.");if(confirm("Delete every product from the shared catalogue for all visitors?")){const {error}=await db.from("products").delete().neq("id","__never_matches__");if(error){toast(error.message);return}bag=[];saveBag();await loadCatalogue();resetForm();toast("Shared catalogue cleared.")}});$("#checkoutButton")?.addEventListener("click",()=>startCheckout());document.addEventListener("click",e=>{if(e.target.closest("#drawerCheckoutButton"))startCheckout()});document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeBag();const nav=document.querySelector("#storeGlobalMobileNav"),toggle=document.querySelector(".store-global-menu-toggle");if(nav&&toggle){nav.classList.remove("is-open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Open menu");document.body.classList.remove("no-scroll")}const searchPanel=document.querySelector("#storeGlobalSearchPanel"),searchToggle=document.querySelector(".store-global-search-toggle");if(searchPanel&&searchToggle){searchPanel.hidden=true;searchToggle.setAttribute("aria-expanded","false");searchToggle.setAttribute("aria-label","Open search")}}});
 $$("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
 addStorePreferences();loadGoogleTranslate();loadExchangeRates();updateCurrencyLabels();
 // The bag uses a Shopify-style right-side drawer; the full bag page remains available as a secondary link.
