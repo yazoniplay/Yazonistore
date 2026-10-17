@@ -347,3 +347,7 @@ p,li,small,label,summary,span,a,.product-name,.product-price,.calm-kicker,.eyebr
 
 /* Mobile menu is closed until its existing inline handler opens it. */
 @media(max-width:760px){.mobile-nav-overlay{display:none!important}.mobile-nav-overlay.is-open{display:block!important}}
+
+.calm-category-row button,.store-category-row button{border:0!important;border-bottom:1px solid transparent!important;padding:3px 0!important;background:transparent!important;color:var(--text)!important;font:500 13px 'Manrope',sans-serif!important;border-radius:0!important}
+.calm-category-row button.active,.store-category-row button.active{border-bottom-color:var(--text)!important;color:var(--heading)!important}
+.calm-category-row button:hover,.store-category-row button:hover{border-bottom-color:var(--text)!important}
