@@ -4,70 +4,76 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f5f3ef">
-<meta name="description" content="Yazonistore — everyday goods, redefined.">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Yazonistore">
-<meta property="og:title" content="Yazonistore — Everyday Goods, Redefined">
-<meta property="og:description" content="Style, useful tech, and things for your space.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=90">
-<title>Yazonistore</title>
+<meta name="description" content="Shop everyday goods at Yazonistore.">
+<title>Yazonistore — Shop</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=marketplace-20261017a">
-<link rel="stylesheet" href="street.css?v=fallen-inspired-20261017f">
-<link rel="stylesheet" href="marketplace.css?v=products-20261017b">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=store-reset-20261017a">
+<style>
+:root{--reset-bg:#f7f6f3;--reset-ink:#171717;--reset-line:#dedbd5}
+body.reset-store{margin:0;background:var(--reset-bg);color:var(--reset-ink);font-family:Manrope,Arial,sans-serif}
+.reset-header{height:76px;padding:0 clamp(18px,5vw,72px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--reset-line);background:var(--reset-bg)}
+.reset-logo{color:inherit;text-decoration:none;font-weight:800;letter-spacing:.13em;font-size:17px}
+.reset-nav{display:flex;align-items:center;gap:24px}
+.reset-nav a,.reset-bag{color:inherit;text-decoration:none;font-size:13px}
+.reset-bag{background:none;border:1px solid #aaa69f;border-radius:2px;padding:11px 15px;cursor:pointer;font:inherit;font-size:13px}
+.reset-hero{padding:clamp(48px,9vw,112px) clamp(18px,8vw,120px) clamp(40px,6vw,72px);background:#ece9e3}
+.reset-hero-kicker{font-size:10px;letter-spacing:.18em;font-weight:800;text-transform:uppercase}
+.reset-hero h1{max-width:900px;margin:22px 0;font-size:clamp(42px,8vw,100px);line-height:.94;letter-spacing:-.075em;font-weight:800}
+.reset-hero p{max-width:450px;font-size:15px;line-height:1.7;color:#55514b}
+.reset-hero-link{display:inline-flex;margin-top:16px;padding:14px 20px;background:#171717;color:white;text-decoration:none;font-size:11px;letter-spacing:.1em;font-weight:800}
+.reset-products{padding:54px clamp(18px,5vw,72px) 80px}
+.reset-products-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+.reset-products-head h2{font-size:clamp(27px,4vw,42px);letter-spacing:-.06em;margin:0}
+.reset-products-head p{font-size:12px;color:#6a665f;margin:0}
+#homeProducts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+#homeProducts .product-card{min-width:0;background:transparent;border:0;box-shadow:none}
+#homeProducts .product-image-wrap{display:block;position:relative;aspect-ratio:4/5;background:#e9e6e0;overflow:hidden}
+#homeProducts .product-image{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+#homeProducts .product-card:hover .product-image{transform:scale(1.025)}
+#homeProducts .product-badge{position:absolute;left:10px;top:10px;background:#f7f6f3;color:#171717;padding:6px 8px;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+#homeProducts .product-meta{display:flex;justify-content:space-between;gap:10px;align-items:start;margin-top:13px}
+#homeProducts .product-name{font-size:13px;font-weight:700;color:inherit;text-decoration:none}
+#homeProducts .product-price{font-size:13px;white-space:nowrap}
+#homeProducts .product-description{font-size:11px;line-height:1.6;color:#6a665f}
+#homeProducts .product-card-actions{display:flex;gap:8px;flex-wrap:wrap}
+#homeProducts .product-card-actions button{cursor:pointer;font:inherit;font-size:11px;padding:11px 13px;border:1px solid #171717;background:#171717;color:white}
+#homeProducts .product-card-actions .button-paypal{background:transparent;color:#171717}
+.reset-empty{padding:30px 0;color:#615d56;font-size:13px}
+.reset-footer{border-top:1px solid var(--reset-line);padding:25px clamp(18px,5vw,72px);display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:11px;color:#6a665f}
+.reset-footer a{color:inherit;text-decoration:none}
+@media(max-width:760px){.reset-header{height:66px}.reset-nav{gap:13px}#homeProducts{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}.reset-products{padding-top:36px}.reset-products-head{align-items:start;flex-direction:column;gap:8px}.reset-footer{flex-wrap:wrap}}
+@media(max-width:380px){.reset-logo{font-size:14px}.reset-nav{gap:8px}.reset-bag{padding:9px}.reset-hero h1{font-size:42px}}
+</style>
 </head>
-<body class="premium-store luxury-store homepage-redesign">
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="luxury-header" id="siteHeader">
-  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
-  <a class="luxury-wordmark" href="index.html" aria-label="Yazonistore home">YAZONISTORE</a>
-  <nav class="desktop-nav luxury-nav" aria-label="Main navigation"><a href="shop.html">Shop</a></nav>
-  <div class="luxury-actions"><button type="button" data-open-bag class="studio-bag">Bag <span data-bag-count>0</span></button></div>
-</header>
-<nav class="mobile-nav-overlay" id="mobileNav" aria-label="Mobile navigation">
-  <a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="shipping.html">Shipping &amp; returns</a><a href="contact.html">Contact</a>
+<body class="reset-store">
+<header class="reset-header">
+<a class="reset-logo" href="index.html">YAZONISTORE</a>
+<nav class="reset-nav" aria-label="Main navigation">
+<a href="shop.html">Shop</a>
+<button type="button" class="reset-bag" data-open-bag>Bag <span data-bag-count>0</span></button>
 </nav>
-<main id="main">
-  <section class="luxury-hero">
-    <div class="luxury-hero-image" role="img" aria-label="Fashion editorial featuring a streetwear look"></div>
-    <div class="luxury-hero-overlay"></div>
-    <div class="luxury-hero-copy">
-      
-      <h1>EVERYDAY GOODS.<br><em>REDEFINED.</em></h1>
-      <p class="luxury-hero-description">Style, useful tech, and things for your space.</p>
-      <a href="shop.html" class="luxury-hero-button">SHOP NOW <span aria-hidden="true">↗</span></a>
-    </div>
-    <span class="luxury-hero-side-label">YAZONI / EVERYTHING YOU'RE INTO</span>
-  </section>
-  <section class="homepage-products section-wrap" aria-labelledby="homepageProductsTitle">
-    <div class="homepage-products-heading">
-      <div><p class="eyebrow">THE YAZONI EDIT</p><h2 id="homepageProductsTitle">Good things.<br><em>Picked for you.</em></h2></div>
-      <a href="shop.html" class="homepage-products-all">SHOP ALL PRODUCTS <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="product-grid homepage-product-grid" id="homeProducts" aria-live="polite"></div>
-    <div class="empty-state" id="homeEmpty" hidden><p>Products are loading. Please refresh in a moment.</p></div>
-  </section>
+</header>
+<main>
+<section class="reset-hero">
+<div class="reset-hero-kicker">EVERYDAY GOODS / YAZONISTORE</div>
+<h1>GOOD THINGS.<br>NO NOISE.</h1>
+<p>Useful things, considered design. Discover the products worth making room for.</p>
+<a class="reset-hero-link" href="#products">SHOP PRODUCTS ↓</a>
+</section>
+<section class="reset-products" id="products">
+<div class="reset-products-head"><h2>Shop the collection.</h2><p>Real products. Clear prices. No filler.</p></div>
+<div id="homeProducts" aria-live="polite"></div>
+<div id="homeEmpty" class="reset-empty" hidden>No products are available right now. Please check back soon.</div>
+<p style="margin-top:28px"><a class="reset-hero-link" href="shop.html">VIEW ALL PRODUCTS ↗</a></p>
+</section>
 </main>
-<footer class="minimal-footer">
-  <a class="luxury-wordmark" href="index.html">YAZONISTORE</a>
-  <nav aria-label="Footer"><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="shipping.html">Shipping</a><a href="contact.html">Contact</a></nav>
-  <span>© <span data-year></span> Yazonistore</span>
-</footer>
+<footer class="reset-footer"><a class="reset-logo" href="index.html">YAZONISTORE</a><span>© <span data-year></span> Yazonistore</span><span><a href="faq.html">FAQ</a> · <a href="shipping.html">Shipping</a> · <a href="contact.html">Contact</a></span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="app.js?v=products-20261017b"></script>
-<script>
-document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-const menuButton=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('.mobile-nav-overlay');
-if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobileNav.classList.toggle('is-open',open);document.body.classList.toggle('no-scroll',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menuButton.setAttribute('aria-expanded','false');mobileNav.classList.remove('is-open');document.body.classList.remove('no-scroll')}));}
-const header=document.querySelector('.luxury-header');const syncHeader=()=>header?.classList.toggle('is-scrolled',window.scrollY>10);syncHeader();window.addEventListener('scroll',syncHeader,{passive:true});
-const newsletter=document.querySelector('#newsletterForm');newsletter?.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#newsletterMessage').textContent='Thank you. Newsletter signup is not connected in this preview.';newsletter.reset()});
-if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.luxury-section,.luxury-values,.luxury-editorial,.luxury-reviews,.luxury-newsletter').forEach(el=>io.observe(el))}
-</script>
+<script src="app.js?v=store-reset-20261017a"></script>
+<script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
 </body>
 </html>
