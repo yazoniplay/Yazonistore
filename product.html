@@ -5,6 +5,7 @@
 <link rel="canonical" href="https://yazoniplay.github.io/Yazonistore/product.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Yazonistore"><meta property="og:title" content="Product details — Yazonistore"><meta property="og:description" content="View product details, pricing and shopping information at Yazonistore."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Product details — Yazonistore"><meta name="twitter:description" content="View product details, pricing and shopping information at Yazonistore.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
+<div class="store-announcement">Free shipping on orders over [€50]. Tracked delivery worldwide.</div>
 <body class="premium-calm"><header class="calm-header shopify-header">
 <button class="store-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="storeMobileNav"><span></span><span></span><span></span></button>
 <a class="calm-wordmark" href="index.html" aria-label="Yazonistore home">YAZONISTORE<span class="wordmark-dot">.</span></a>
@@ -18,5 +19,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=shopify-drawer-20261017f"></script><script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script><script>
 const menuButton=document.querySelector('.store-menu-toggle'),mobileNav=document.querySelector('#storeMobileNav');
 if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');mobileNav.hidden=!open;document.body.classList.toggle('store-menu-open',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu');document.body.classList.remove('store-menu-open')}));}
+</script>
+<script>
+(()=>{const mark=img=>{if(!(img instanceof HTMLImageElement)||img.dataset.fallbackHandled)return;const src=img.getAttribute('src');if(src&&!(img.complete&&img.naturalWidth===0))return;img.dataset.fallbackHandled='true';img.classList.add('image-failed');const box=img.closest('.product-image-wrap,.detail-photo,.bag-line');if(box){box.classList.add('image-placeholder');box.dataset.imageInitial=((img.alt||'Yazonistore product').trim().charAt(0)||'Y').toUpperCase()}};document.addEventListener('error',e=>mark(e.target),true);const scan=()=>document.querySelectorAll('img').forEach(mark);new MutationObserver(scan).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['src']});scan()})();
 </script>
 </body></html>
