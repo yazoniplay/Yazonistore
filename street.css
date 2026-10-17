@@ -181,3 +181,42 @@ body.luxury-store .toast{background:var(--street-accent);color:#080808;border-ra
  .mobile-nav-overlay{top:64px;inset:64px 0 0}
  .mobile-nav-overlay p{display:none}
 }
+
+/* Fallen-inspired collection storefront: bold editorial, no neon, no filler */
+.homepage-redesign .luxury-hero-image{background-image:url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2200&q=90")!important;background-position:center 35%!important}
+.homepage-redesign .luxury-hero-overlay{background:linear-gradient(90deg,rgba(0,0,0,.73) 0%,rgba(0,0,0,.3) 48%,rgba(0,0,0,.04) 100%),linear-gradient(0deg,rgba(0,0,0,.22),transparent 45%)!important}
+.homepage-redesign .luxury-hero{height:min(78vh,780px);min-height:520px;max-height:780px}
+.homepage-redesign .luxury-hero h1{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(48px,8.5vw,112px)!important;font-weight:900!important;letter-spacing:-.075em!important;line-height:.88!important;text-transform:uppercase!important;max-width:920px}
+.homepage-redesign .luxury-hero h1 em{color:#fff!important}
+.homepage-redesign .luxury-hero-description{font-size:14px;max-width:330px}
+.homepage-redesign .luxury-hero-button{background:#f5f3ef;color:#111!important;border-color:#f5f3ef;text-transform:uppercase;letter-spacing:.1em;font-weight:800;padding:15px 20px}
+.homepage-redesign .luxury-hero-side-label{display:none}
+.collection-edit{padding:28px clamp(18px,4vw,60px) 64px;background:#f5f3ef;color:#111}
+.collection-edit-heading{display:flex;justify-content:space-between;align-items:center;padding:0 0 16px;border-bottom:1px solid #d7d4ce;margin-bottom:18px;font-size:10px;letter-spacing:.16em;font-weight:800}
+.collection-edit-heading span:last-child{color:#777}
+.collection-edit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.collection-edit-card{position:relative;isolation:isolate;min-height:clamp(260px,36vw,490px);padding:22px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;overflow:hidden;color:#fff!important;text-decoration:none;background-color:#282828;background-size:cover;background-position:center;transition:filter .2s}
+.collection-edit-card:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.76),rgba(0,0,0,.03) 80%);transition:background .2s}
+.collection-edit-card:after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.18);pointer-events:none}
+.collection-edit-card:hover{filter:brightness(1.07)}
+.collection-edit-card:hover:before{background:linear-gradient(0deg,rgba(0,0,0,.84),rgba(0,0,0,.02) 90%)}
+.edit-style{background-image:url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85")}
+.edit-tech{background-image:url("https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1100&q=85")}
+.edit-living{background-image:url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1100&q=85")}
+.collection-edit-index{position:absolute;top:20px;left:22px;font-size:10px;letter-spacing:.14em;font-weight:700}
+.collection-edit-title{font-size:clamp(26px,3.4vw,48px);line-height:.92;font-weight:900;letter-spacing:-.06em}
+.collection-edit-link{display:flex;gap:22px;align-items:center;margin-top:20px;padding-bottom:7px;border-bottom:1px solid rgba(255,255,255,.7);font-size:10px;letter-spacing:.14em;font-weight:800}
+.collection-edit-link b{font-size:15px}
+.collection-edit-all{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding:17px 0;border-bottom:1px solid #bdbab3;color:#111!important;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.12em}
+.minimal-footer{background:#f5f3ef}
+@media(max-width:760px){
+ .homepage-redesign .luxury-hero{height:75svh;min-height:500px;max-height:680px}
+ .homepage-redesign .luxury-hero-image{background-position:58% center!important}
+ .homepage-redesign .luxury-hero-overlay{background:linear-gradient(90deg,rgba(0,0,0,.66),rgba(0,0,0,.12)),linear-gradient(0deg,rgba(0,0,0,.25),transparent 65%)!important}
+ .homepage-redesign .luxury-hero-copy{margin-left:22px;width:calc(100% - 44px)}
+ .homepage-redesign .luxury-hero h1{font-size:clamp(44px,11.6vw,74px)!important}
+ .collection-edit{padding:22px 16px 42px}
+ .collection-edit-grid{grid-template-columns:1fr;gap:10px}
+ .collection-edit-card{min-height:310px;padding:20px;background-position:center 40%}
+ .collection-edit-title{font-size:38px}
+}
