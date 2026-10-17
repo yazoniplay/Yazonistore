@@ -98,7 +98,8 @@ html,body{background:var(--store-paper)!important;color:var(--store-ink)!importa
  .store-global-mobile-nav{top:68px!important}
  .store-global-search-panel{padding:14px 18px}
  .store-global-search-form input{font-size:16px!important}
-}`;\n  document.head.appendChild(css);
+}`;
+  document.head.appendChild(css);
   const header=document.createElement("header");
   header.className="store-global-header";
   header.innerHTML='<button class="store-global-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="storeGlobalMobileNav"><span></span><span></span><span></span></button><a class="store-global-brand" href="index.html" aria-label="Yazonistore home">YAZONISTORE<span>.</span></a><nav class="store-global-links" aria-label="Main navigation"><div class="store-global-dropdown"><a class="store-global-dropdown-trigger" href="shop.html" aria-haspopup="true">Shop <span aria-hidden="true">⌄</span></a><div class="store-global-dropdown-panel"><a href="shop.html">Shop all products</a><a href="index.html#products">Featured products</a><a href="shipping.html">Shipping &amp; returns</a></div></div><a href="about.html">Our story</a><a href="faq.html">Help</a></nav><div class="store-global-actions"><button class="store-global-search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="storeGlobalSearchPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></button><button class="store-global-bag" type="button" data-open-bag aria-label="Open shopping bag">Bag <span data-bag-count>0</span></button></div>';
