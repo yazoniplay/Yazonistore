@@ -143,14 +143,6 @@
  .calm-detail-wrap .detail-copy h1{font-size:clamp(36px,2.8vw,48px)!important;overflow-wrap:break-word}
  .calm-detail-wrap .detail-description,.calm-detail-wrap .detail-highlights,.calm-detail-wrap .detail-review-note{max-width:100%!important}
 }
-@media(min-width:1101px) and (max-width:1250px){
- .calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(280px,1fr)!important;column-gap:30px!important}
- .calm-detail-wrap .detail-gallery{grid-column:1!important;grid-row:1 / span 2!important}
- .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
- .calm-detail-wrap .detail-buybox{grid-column:2!important;grid-row:2!important;margin-top:22px!important}
-}
-
-
 /* Actual layout fix: store.css caps main children at 1180px; override that parent rule here. */
 @media(min-width:1101px){
  main>.calm-detail-wrap{
@@ -167,12 +159,6 @@
    column-gap:clamp(24px,2.2vw,38px)!important;
  }
 }
-@media(min-width:1101px) and (max-width:1250px){
- main>.calm-detail-wrap{width:calc(100% - 40px)!important;padding-left:24px!important;padding-right:24px!important}
- main>.calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(280px,1fr)!important}
-}
-
-
 /* Keep all three product panels side-by-side across desktop widths; the old 1101–1250px
    override forced the purchase panel back underneath the description. */
 @media(min-width:1101px){
@@ -186,4 +172,30 @@
  .calm-detail-wrap .detail-gallery{grid-column:1!important;grid-row:1!important}
  .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
  .calm-detail-wrap .detail-buybox{grid-column:3!important;grid-row:1!important;margin-top:0!important}
+}
+
+
+/* Product detail hardening: safe grid sizing, readable title spacing, and visible image failure state. */
+.calm-detail-wrap{width:100%!important;min-width:0!important;overflow:visible!important}
+.calm-detail-wrap .product-detail-page{min-width:0!important;width:100%!important}
+.calm-detail-wrap .detail-gallery,.calm-detail-wrap .detail-copy,.calm-detail-wrap .detail-buybox{min-width:0!important;max-width:100%!important}
+.calm-detail-wrap .detail-copy{overflow-wrap:anywhere!important}
+.calm-detail-wrap .detail-copy>.eyebrow{display:block!important;position:static!important;line-height:1.6!important;margin:0 0 10px!important}
+.calm-detail-wrap .detail-new-label{position:static!important;line-height:1.6!important;margin:0 0 12px!important}
+.calm-detail-wrap .detail-copy h1{display:block!important;position:static!important;margin:0 0 18px!important;line-height:1.08!important;overflow-wrap:anywhere!important}
+.calm-detail-wrap .detail-photo.image-unavailable{display:grid!important;place-items:center!important;background:#eeece6!important}
+.calm-detail-wrap .detail-photo.image-unavailable::after{content:"Product image temporarily unavailable";display:block;max-width:220px;padding:18px;color:#686862;font:500 12px/1.7 Manrope,Arial,sans-serif;text-align:center}
+.calm-detail-wrap .detail-photo.image-unavailable img,.calm-detail-wrap .detail-photo img.image-failed{display:none!important}
+@media(min-width:1101px){
+ .calm-detail-wrap{max-width:1600px!important;margin-inline:auto!important;padding-left:clamp(24px,3vw,52px)!important;padding-right:clamp(24px,3vw,52px)!important}
+ .calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr) minmax(240px,.88fr)!important;grid-template-rows:auto!important;column-gap:clamp(18px,2vw,30px)!important;row-gap:0!important}
+ .calm-detail-wrap .detail-gallery{grid-column:1!important;grid-row:1!important;position:static!important}
+ .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
+ .calm-detail-wrap .detail-buybox{grid-column:3!important;grid-row:1!important;margin-top:0!important}
+}
+@media(min-width:681px) and (max-width:1100px){
+ .calm-detail-wrap .product-detail-page{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:clamp(20px,3vw,32px)!important;row-gap:24px!important}
+ .calm-detail-wrap .detail-gallery{grid-column:1!important;grid-row:1 / span 2!important;position:static!important}
+ .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
+ .calm-detail-wrap .detail-buybox{grid-column:2!important;grid-row:2!important;margin-top:0!important}
 }
