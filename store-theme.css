@@ -378,3 +378,52 @@ body.premium-calm .store-mobile-nav a span{color:#315b43!important}
   body.premium-calm .store-mobile-nav:not([hidden]){display:flex!important;flex-direction:column!important}
   .shopify-inspired .calm-hero{grid-template-columns:1fr!important}
 }
+
+
+/* Shopify-inspired navigation and fresh evergreen accent */
+.shopify-inspired,.premium-calm{
+ --store-green:#234c3a;
+ --store-green-hover:#183b2b;
+ --store-soft:#f4f5f0;
+}
+.store-announcement{background:#234c3a!important;color:#fff!important;letter-spacing:.12em;font-size:10px;font-weight:800}
+.store-announcement span{color:#d8e3d8!important}
+.shopify-header{position:sticky!important;top:0;background:#fff!important;z-index:100!important}
+.store-desktop-nav{gap:clamp(18px,2.5vw,34px)!important}
+.store-nav-dropdown{position:relative;display:flex;align-items:center;height:100%}
+.store-nav-dropdown>a{display:flex;align-items:center;gap:6px;height:76px}
+.store-nav-dropdown>a span{font-size:15px;transition:transform .18s}
+.store-nav-dropdown:hover>a span,.store-nav-dropdown:focus-within>a span{transform:rotate(180deg)}
+.store-nav-dropdown-menu{position:absolute;top:calc(100% - 1px);left:-18px;min-width:220px;padding:9px;background:#fff;border:1px solid #e5e5e5;box-shadow:0 12px 28px #11111112;display:none;flex-direction:column;gap:0}
+.store-nav-dropdown:hover .store-nav-dropdown-menu,.store-nav-dropdown:focus-within .store-nav-dropdown-menu{display:flex}
+.store-nav-dropdown-menu a{display:block;padding:13px 12px!important;font-size:11px!important;font-weight:600!important;letter-spacing:.015em!important;text-transform:none!important;border-bottom:1px solid #f0f0f0}
+.store-nav-dropdown-menu a:last-child{border-bottom:0}
+.store-nav-dropdown-menu a:hover{background:#f4f5f0;text-decoration:none!important}
+.store-header-actions .calm-bag{border:1px solid #234c3a!important;background:#234c3a!important;color:#fff!important;padding:11px 15px!important;transition:background .18s}
+.store-header-actions .calm-bag:hover{background:#183b2b!important}
+.store-header-actions .calm-bag span{display:inline-grid;place-items:center;min-width:19px;height:19px;margin-left:5px;padding:0 4px;border-radius:50%;background:#fff!important;color:#234c3a!important;font-size:10px!important}
+.store-search-link{padding:9px 0}
+.store-search-link:hover{color:#234c3a!important}
+.shopify-inspired .calm-link,.shopify-inspired .calm-products-bottom a{color:#234c3a!important;border-color:#234c3a!important}
+.shopify-inspired .calm-link{background:#234c3a!important;color:#fff!important;border:1px solid #234c3a!important;padding:14px 18px}
+.shopify-inspired .calm-link:hover{background:#183b2b!important;color:#fff!important}
+.shopify-inspired .calm-hero{background:#f4f5f0!important}
+.shopify-inspired .calm-hero-copy{background:#f4f5f0!important}
+.shopify-inspired .calm-hero-image{background:#eceee7!important}
+.shopify-inspired .calm-kicker{color:#234c3a!important}
+.shopify-inspired .calm-hero h1 em{color:#234c3a!important}
+.shopify-inspired .calm-product-grid .product-card-actions button:hover{background:#234c3a!important;color:#fff!important;border-color:#234c3a!important}
+.shopify-inspired .calm-product-grid .product-card-actions button[data-buy-now]{background:#234c3a!important;color:#fff!important;border-color:#234c3a!important}
+.store-mobile-nav:not([hidden]){box-shadow:0 18px 28px #1111110b}
+.store-mobile-nav a{font-size:19px!important;padding:16px 0!important}
+.store-menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.store-menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.store-menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.store-menu-toggle span{transition:transform .18s,opacity .18s}
+@media(max-width:760px){
+ .store-desktop-nav,.store-nav-dropdown{display:none!important}
+ .shopify-header{position:sticky!important;top:0!important}
+ .store-mobile-nav:not([hidden]){position:relative;z-index:99;display:flex!important}
+ .store-search-link{padding:8px 3px}
+ .store-header-actions .calm-bag{padding:9px 11px!important}
+}
