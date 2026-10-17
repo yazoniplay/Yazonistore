@@ -354,3 +354,13 @@ p,li,small,label,summary,span,a,.product-name,.product-price,.calm-kicker,.eyebr
 
 /* Accessible labels remain available to assistive technology without duplicating visible controls. */
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* Full-store neutral grey background, including the header, shop, product surfaces and footer. */
+:root{--bg:#e2e2e2;--panel:#ededed;--line:#c8c8c8;--charcoal:#242424;--text:#606060;--text-on-dark:#f5f5f5;--heading:#222;--ink:#242424;--mute:#606060;--gold:#242424;--white:#f5f5f5;--store-paper:#e2e2e2;--store-white:#f1f1f1;--store-surface:#e9e9e9;--store-ink:#242424;--store-muted:#606060;--store-line:#c8c8c8;--store-accent:#242424}
+html,body{background:#e2e2e2!important;color:#242424!important}
+.calm-header,.luxury-header,.calm-hero,.calm-products,.calm-shop,.calm-detail-wrap,.bag-page-calm,.section-wrap,.atelier-content-page,.calm-footer,.site-footer,.luxury-footer,.minimal-footer{background:#e2e2e2!important;color:#242424!important}
+.calm-hero-copy,.calm-product-card,.bag-summary,.product-detail-page{background:transparent!important}
+.product-image-wrap,.detail-photo,.detail-thumb,.bag-line>img{background:#d5d5d5!important}
+.store-mobile-nav,.mobile-nav-overlay,.store-nav-dropdown-menu{background:#e9e9e9!important;border-color:#c8c8c8!important}
+.product-name,.product-price,.calm-hero h1,.calm-section-head h2{color:#242424!important}
+
