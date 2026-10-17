@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yazonistore">
 <meta property="og:title" content="Yazonistore — Everything you need, shipped worldwide">
-<meta property="og:description" content="Trending products in every category, checked and sent with tracking.">
+<meta property="og:description" content="Useful products, clear prices, and a straightforward checkout.">
 
 <title>Yazonistore — Everyday products, shipped worldwide</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -20,7 +20,21 @@
 
 <link rel="stylesheet" href="store.css?v=marketplace-neutral-20261017d">
 <link rel="canonical" href="https://yazoniplay.github.io/Yazonistore/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Yazonistore — Everything you need, shipped worldwide"><meta name="twitter:description" content="Trending products in every category, checked and sent with tracking.">
-</head>
+<style>
+/* Cleaner product-led storefront; no decorative category tiles or fake inventory. */
+.calm-category-row{display:none!important}
+.calm-products{background:#f6f7f3!important;color:#1b2b20!important}
+.calm-products .calm-section-head h2{color:#1b2b20!important}
+.calm-products .calm-section-head>p{color:#637066!important}
+.calm-product-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important}
+.calm-product-grid .product-card{background:transparent!important;border:0!important;box-shadow:none!important}
+.calm-product-grid .product-image-wrap{background:#e8ebe5!important;aspect-ratio:4/5!important}
+.calm-product-grid .product-image{object-fit:contain!important;mix-blend-mode:multiply}
+.calm-product-grid .product-name,.calm-product-grid .product-price{color:#1b2b20!important}
+.calm-product-grid .product-description{color:#637066!important}
+.calm-product-grid .quick-add,.calm-product-grid .product-buy-now{background:#244632!important;color:#fff!important;border:1px solid #244632!important;border-radius:2px!important;padding:11px 14px!important}
+@media(max-width:760px){.calm-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px 12px!important}.calm-products .calm-section-head{align-items:flex-start;flex-direction:column}}
+</style></head>
 <body class="premium-calm shopify-inspired">
 <div class="store-announcement">Free shipping on orders over [€50]. Tracked delivery worldwide.</div>
 <header class="calm-header shopify-header">
@@ -37,14 +51,14 @@
 <section class="calm-hero">
 <div class="calm-hero-copy">
 <p class="calm-kicker">Yazonistore</p>
-<h1>Everything you need, shipped worldwide.</h1>
+<h1>Good finds. No filler.</h1>
 <p>Trending products in every category, checked and sent with tracking.</p>
 <a class="calm-link" href="shop.html">Shop all products <span aria-hidden="true">↗</span></a>
 </div>
 </section>
 <section class="calm-products" id="products">
-<div class="calm-section-head"><div><p class="calm-kicker">PICKS WORTH A LOOK</p><h2>Shop the collection.</h2></div><p>Good finds. Straightforward prices.<br>Find your next everyday favourite.</p></div>
-<nav class="calm-category-row" aria-label="Product categories"><a href="shop.html">All</a><a href="shop.html?category=Desk">Desk</a><a href="shop.html?category=Everyday">Everyday</a><a href="shop.html?category=Travel">Travel</a></nav><div id="homeProducts" class="calm-product-grid" aria-live="polite"></div>
+<div class="calm-section-head"><div><p class="calm-kicker">THE CURRENT COLLECTION</p><h2>Shop the products.</h2></div><p>Useful things, selected one product at a time.</p></div>
+<div id="homeProducts" class="calm-product-grid" aria-live="polite"></div>
 <div id="homeEmpty" class="reset-empty" hidden>No products are available right now. Please check back soon.</div>
 <div class="calm-products-bottom"><span>Secure checkout with PayPal. Tracked delivery information will be confirmed before launch.</span><a href="shop.html">Shop all products ↗</a></div>
 </section>
@@ -52,7 +66,7 @@
 <footer class="calm-footer"><a class="calm-wordmark" href="index.html">YAZONISTORE</a><nav aria-label="Footer"><a href="faq.html">FAQ</a><a href="shipping.html">Shipping</a><a href="contact.html">Contact</a></nav><span>© <span data-year></span> Yazonistore</span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="app.js?v=shopify-drawer-20261017f"></script>
+<script src="app.js?v=bag-image-fix-20261017g"></script>
 <script>
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 const menuButton=document.querySelector('.store-menu-toggle'),mobileNav=document.querySelector('#storeMobileNav');
