@@ -270,3 +270,23 @@
  }
  main>.calm-detail-wrap .detail-photo{width:100%!important}
 }
+
+
+/* Give the product copy and purchase panel more breathing room, shifting both slightly right. */
+@media(min-width:1101px){
+ main>.calm-detail-wrap .product-detail-page{
+   grid-template-columns:minmax(0,1.7fr) minmax(0,.8fr) minmax(0,.8fr)!important;
+   column-gap:clamp(30px,2.2vw,40px)!important;
+ }
+ main>.calm-detail-wrap .detail-copy{
+   padding-left:clamp(2px,.35vw,7px)!important;
+   padding-right:clamp(4px,.6vw,12px)!important;
+   box-sizing:border-box!important;
+ }
+ main>.calm-detail-wrap .detail-buybox{
+   margin-left:0!important;
+   width:100%!important;
+   padding:clamp(20px,1.7vw,28px)!important;
+   box-sizing:border-box!important;
+ }
+}
