@@ -232,3 +232,41 @@
 .calm-detail-wrap .detail-photo.image-placeholder{display:grid!important;place-items:center!important;background:#eeece6!important}
 .calm-detail-wrap .detail-photo.image-placeholder::after{content:"Product image could not load";display:block;max-width:220px;padding:18px;color:#686862;font:500 12px/1.7 Manrope,Arial,sans-serif;text-align:center}
 .calm-detail-wrap .detail-photo.image-placeholder img,.calm-detail-wrap .detail-photo img.image-failed{display:none!important}
+
+
+/* Use the full desktop viewport: no narrow centered content column or wasted side space. */
+@media(min-width:1101px){
+ main>.calm-detail-wrap{
+   width:calc(100% - 40px)!important;
+   max-width:none!important;
+   margin-left:20px!important;
+   margin-right:20px!important;
+   padding-left:0!important;
+   padding-right:0!important;
+   box-sizing:border-box!important;
+ }
+ main>.calm-detail-wrap .product-detail-page{
+   width:100%!important;
+   max-width:none!important;
+   display:grid!important;
+   grid-template-columns:minmax(0,1.55fr) minmax(0,.78fr) minmax(0,.78fr)!important;
+   column-gap:clamp(18px,1.8vw,30px)!important;
+   row-gap:0!important;
+   align-items:start!important;
+ }
+ main>.calm-detail-wrap .detail-gallery{
+   grid-column:1!important;grid-row:1!important;
+   width:100%!important;min-width:0!important;
+ }
+ main>.calm-detail-wrap .detail-copy{
+   grid-column:2!important;grid-row:1!important;
+   width:100%!important;max-width:none!important;min-width:0!important;
+ }
+ main>.calm-detail-wrap .detail-buybox{
+   grid-column:3!important;grid-row:1!important;
+   width:100%!important;max-width:none!important;min-width:0!important;
+   margin:0!important;justify-self:stretch!important;
+   box-sizing:border-box!important;padding:clamp(18px,1.6vw,28px)!important;
+ }
+ main>.calm-detail-wrap .detail-photo{width:100%!important}
+}
