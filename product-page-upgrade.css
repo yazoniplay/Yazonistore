@@ -216,6 +216,18 @@
    max-width:100%!important;padding:12px!important;
  }
 }
+/* Give YOUR PICK more width and nudge it right without moving the overall page or description. */
+@media(min-width:1101px){
+ .calm-detail-wrap .detail-buybox{
+   width:calc(100% + clamp(48px,5vw,84px))!important;
+   max-width:none!important;
+   justify-self:start!important;
+   margin-left:clamp(10px,1.2vw,18px)!important;
+   box-sizing:border-box!important;
+   padding:clamp(16px,1.6vw,22px)!important;
+ }
+ .calm-detail-wrap .detail-buybox .button{white-space:normal!important}
+}
 /* The global image-error handler marks .image-placeholder, not .image-unavailable. */
 .calm-detail-wrap .detail-photo.image-placeholder{display:grid!important;place-items:center!important;background:#eeece6!important}
 .calm-detail-wrap .detail-photo.image-placeholder::after{content:"Product image could not load";display:block;max-width:220px;padding:18px;color:#686862;font:500 12px/1.7 Manrope,Arial,sans-serif;text-align:center}
