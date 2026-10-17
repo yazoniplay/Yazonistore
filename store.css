@@ -351,3 +351,6 @@ p,li,small,label,summary,span,a,.product-name,.product-price,.calm-kicker,.eyebr
 .calm-category-row button,.store-category-row button{border:0!important;border-bottom:1px solid transparent!important;padding:3px 0!important;background:transparent!important;color:var(--text)!important;font:500 13px 'Manrope',sans-serif!important;border-radius:0!important}
 .calm-category-row button.active,.store-category-row button.active{border-bottom-color:var(--text)!important;color:var(--heading)!important}
 .calm-category-row button:hover,.store-category-row button:hover{border-bottom-color:var(--text)!important}
+
+/* Accessible labels remain available to assistive technology without duplicating visible controls. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
