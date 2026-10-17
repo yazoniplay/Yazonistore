@@ -99,3 +99,30 @@
 @media(min-width:681px) and (max-width:900px){
  .calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(270px,.95fr)!important;gap:24px!important}
 }
+
+
+/* Desktop three-column product layout: gallery, description, purchase panel */
+@media(min-width:1101px){
+ .calm-detail-wrap .product-detail-page{
+   display:grid!important;
+   grid-template-columns:minmax(0,1.05fr) minmax(250px,.82fr) minmax(260px,.83fr)!important;
+   grid-template-rows:auto!important;
+   align-items:start!important;
+   column-gap:clamp(20px,2.1vw,32px)!important;
+   row-gap:0!important;
+ }
+ .calm-detail-wrap .detail-gallery{
+   grid-column:1!important;grid-row:1!important;
+   position:static!important;min-width:0!important;
+ }
+ .calm-detail-wrap .detail-copy{
+   grid-column:2!important;grid-row:1!important;
+   min-width:0!important;
+ }
+ .calm-detail-wrap .detail-buybox{
+   grid-column:3!important;grid-row:1!important;
+   position:static!important;align-self:start!important;
+   min-width:0!important;margin-top:0!important;padding:20px!important;
+ }
+ .calm-detail-wrap .detail-copy h1{font-size:clamp(34px,3vw,46px)!important}
+}
