@@ -201,19 +201,20 @@
 }
 
 
-/* Desktop alignment: move the complete product block clearly to the right. */
+/* Give the product photo more room by adjusting only the two text/purchase panels.
+   Keep the main product wrapper and its overall page alignment unchanged. */
 @media(min-width:1101px){
- .calm-detail-wrap{
-   width:calc(100% - clamp(112px, 12vw, 200px))!important;
-   max-width:none!important;
-   margin-left:clamp(88px, 9vw, 160px)!important;
-   margin-right:0!important;
-   padding-left:clamp(24px, 3vw, 48px)!important;
-   padding-right:clamp(20px, 2vw, 32px)!important;
- }
  .calm-detail-wrap .product-detail-page{
-   grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr) minmax(240px,.88fr)!important;
-   column-gap:clamp(18px,1.8vw,28px)!important;
+   grid-template-columns:minmax(0,1.25fr) minmax(220px,.82fr) minmax(220px,.76fr)!important;
+   column-gap:clamp(16px,1.5vw,24px)!important;
+ }
+ .calm-detail-wrap .detail-copy{
+   grid-column:2!important;grid-row:1!important;
+   max-width:100%!important;
+ }
+ .calm-detail-wrap .detail-buybox{
+   grid-column:3!important;grid-row:1!important;
+   max-width:100%!important;padding:18px!important;
  }
 }
 /* The global image-error handler marks .image-placeholder, not .image-unavailable. */
