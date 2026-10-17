@@ -126,3 +126,26 @@
  }
  .calm-detail-wrap .detail-copy h1{font-size:clamp(34px,3vw,46px)!important}
 }
+
+
+/* Balanced centered product layout: preserve readable image, copy, and buy panel */
+@media(min-width:1101px){
+ .calm-detail-wrap{max-width:1440px!important;margin-inline:auto!important;padding-left:clamp(24px,4vw,64px)!important;padding-right:clamp(24px,4vw,64px)!important}
+ .calm-detail-wrap .product-detail-page{
+   grid-template-columns:minmax(0,1.12fr) minmax(300px,1fr) minmax(270px,.88fr)!important;
+   width:100%!important;max-width:100%!important;
+   column-gap:clamp(22px,2.5vw,38px)!important;
+   align-items:start!important;
+ }
+ .calm-detail-wrap .detail-gallery,.calm-detail-wrap .detail-copy,.calm-detail-wrap .detail-buybox{min-width:0!important;width:auto!important}
+ .calm-detail-wrap .detail-photo{width:100%!important;aspect-ratio:1/1!important}
+ .calm-detail-wrap .detail-photo img{max-width:100%!important}
+ .calm-detail-wrap .detail-copy h1{font-size:clamp(36px,2.8vw,48px)!important;overflow-wrap:break-word}
+ .calm-detail-wrap .detail-description,.calm-detail-wrap .detail-highlights,.calm-detail-wrap .detail-review-note{max-width:100%!important}
+}
+@media(min-width:1101px) and (max-width:1250px){
+ .calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(280px,1fr)!important;column-gap:30px!important}
+ .calm-detail-wrap .detail-gallery{grid-column:1!important;grid-row:1 / span 2!important}
+ .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
+ .calm-detail-wrap .detail-buybox{grid-column:2!important;grid-row:2!important;margin-top:22px!important}
+}
