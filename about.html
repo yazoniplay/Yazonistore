@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://yazoniplay.github.io/Yazonistore/about.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Yazonistore"><meta property="og:title" content="About — Yazonistore"><meta property="og:description" content="Learn about Yazonistore and our approach to a clear, useful online shopping experience."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="About — Yazonistore"><meta name="twitter:description" content="Learn about Yazonistore and our approach to a clear, useful online shopping experience.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body class="premium-store luxury-store"><div class="luxury-announcement">Complimentary delivery on orders over 800 kr <span>—</span> Thoughtfully chosen, always</div>
+<body class="premium-store luxury-store"><div class="luxury-announcement">Free shipping on orders over [€50]. Tracked delivery worldwide.</div>
 <header class="luxury-header">
 <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
 <a class="luxury-wordmark" href="index.html" aria-label="Yazonistore home">YAZONISTORE</a>
@@ -22,5 +22,8 @@
 <footer class="site-footer premium-footer"><a class="wordmark" href="index.html">yazoni<span>.</span></a><div class="footer-links"><a href="shop.html">Shop</a><a href="faq.html">FAQ</a></div><div class="footer-bottom premium-footer-bottom"><span>© <span data-year></span> Yazonistore</span><a href="admin.html">Store admin</a></div></footer><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=shopify-drawer-20261017f"></script><script>
 const menuButton=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('.mobile-nav-overlay');
 if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobileNav.classList.toggle('is-open',open);document.body.classList.toggle('no-scroll',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menuButton.setAttribute('aria-expanded','false');mobileNav.classList.remove('is-open');document.body.classList.remove('no-scroll')}));}
+</script>
+<script>
+(()=>{const mark=img=>{if(!(img instanceof HTMLImageElement)||img.dataset.fallbackHandled)return;const src=img.getAttribute('src');if(src&&!(img.complete&&img.naturalWidth===0))return;img.dataset.fallbackHandled='true';img.classList.add('image-failed');const box=img.closest('.product-image-wrap,.detail-photo,.bag-line');if(box){box.classList.add('image-placeholder');box.dataset.imageInitial=((img.alt||'Yazonistore product').trim().charAt(0)||'Y').toUpperCase()}};document.addEventListener('error',e=>mark(e.target),true);const scan=()=>document.querySelectorAll('img').forEach(mark);new MutationObserver(scan).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['src']});scan()})();
 </script>
 </body></html>
