@@ -344,3 +344,6 @@ p,li,small,label,summary,span,a,.product-name,.product-price,.calm-kicker,.eyebr
 }
 @media(max-width:390px){.calm-header,.luxury-header{grid-template-columns:30px minmax(0,1fr) 66px auto!important;gap:6px!important;padding-inline:20px!important}.store-menu-toggle,.menu-toggle,.store-global-menu-toggle{width:30px;padding:4px}.calm-header>.calm-wordmark,.luxury-header>.luxury-wordmark{font-size:10px!important;letter-spacing:.12em!important}.store-header-search{max-width:66px!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Mobile menu is closed until its existing inline handler opens it. */
+@media(max-width:760px){.mobile-nav-overlay{display:none!important}.mobile-nav-overlay.is-open{display:block!important}}
