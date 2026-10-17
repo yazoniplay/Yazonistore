@@ -1399,3 +1399,12 @@ body.premium-store :focus-visible{outline:2px solid var(--atelier-gold);outline-
 .atelier-policy-copy p:not(.eyebrow),.atelier-policy-copy li{font-size:14px}
 .atelier-policy-copy ul{padding-left:18px;color:var(--atelier-muted)}
 @media(max-width:760px){.atelier-contact-layout,.atelier-policy-copy{grid-template-columns:1fr;gap:34px}.atelier-contact-layout{padding-top:40px}.atelier-policy-copy{padding-top:40px}.atelier-page-intro{padding-top:64px}}
+
+
+/* Mobile overflow correction: keep the editorial panel inside the viewport. */
+@media(max-width:760px){
+  body.premium-store,body.premium-store #main{max-width:100%;min-width:0;overflow-x:clip}
+  body.premium-store .luxury-editorial{display:grid;width:100%;max-width:100vw;min-width:0;margin-inline:0;overflow:hidden}
+  body.premium-store .luxury-editorial-copy{width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+  body.premium-store .luxury-editorial-copy>*{max-width:100%;overflow-wrap:anywhere}
+}
