@@ -15,7 +15,32 @@
 <div class="store-header-actions"><a class="store-search-link" href="shop.html">Search</a><button class="calm-bag" type="button" data-open-bag>Bag <span data-bag-count>0</span></button></div>
 </header>
 <nav class="store-mobile-nav" id="storeMobileNav" aria-label="Mobile navigation" hidden><a href="shop.html">Shop all <span>↗</span></a><a href="index.html#products">Featured products <span>↗</span></a><a href="faq.html">Help &amp; FAQ <span>↗</span></a><a href="shipping.html">Shipping &amp; returns <span>↗</span></a><a href="contact.html">Contact us <span>↗</span></a></nav>
-<main class="bag-page-calm"><div class="page-heading"><p class="calm-kicker">Your selection</p><h1>Your bag.</h1><p>Review your items before checkout.</p></div><div class="bag-layout"><div id="bagItems" class="bag-page-items"><div class="empty-state"><h2>Your bag is empty.</h2><p>There are no products in your bag yet.</p><a class="button button-dark" href="shop.html">Browse the shop ↗</a></div></div><aside class="bag-summary"><h2>Order summary</h2><div class="summary-line"><span>Subtotal</span><strong id="bagSubtotal">0 kr</strong></div><p>Delivery options have not been configured yet. Review the final total and shipping details before placing an order.</p><button class="button button-dark full-width" id="checkoutButton" type="button">Checkout ↗</button><small>Payment is handled securely on PayPal after you review your order.</small></aside></div></main>
+<main class="bag-page-calm bag-page-premium">
+  <div class="bag-breadcrumb"><a href="shop.html">← Continue shopping</a><span> / </span><span>Your bag</span></div>
+  <div class="bag-page-intro">
+    <div><p class="calm-kicker">YOUR SELECTION</p><h1>Your bag<span class="bag-title-period">.</span></h1><p class="bag-intro-copy">A final look at the things you chose.</p></div>
+    <span class="bag-item-count" id="bagItemCount">0 items</span>
+  </div>
+  <div class="bag-layout bag-layout-premium">
+    <section class="bag-items-column" aria-label="Items in your bag">
+      <div class="bag-items-heading"><h2>Items</h2><span>Price · Quantity</span></div>
+      <div id="bagItems" class="bag-page-items"><div class="empty-state"><h2>Your bag is empty.</h2><p>Find something worth keeping.</p><a class="button button-dark" href="shop.html">Explore the collection <span aria-hidden="true">↗</span></a></div></div>
+      <div class="bag-reassurance">
+        <div class="bag-reassurance-icon" aria-hidden="true">↗</div><div><strong>Checkout with confidence</strong><p>Review your order before completing payment. PayPal handles the payment step securely.</p></div>
+      </div>
+    </section>
+    <aside class="bag-summary bag-summary-premium" aria-labelledby="bagSummaryTitle">
+      <p class="calm-kicker">THE DETAILS</p><h2 id="bagSummaryTitle">Order summary</h2>
+      <div class="summary-line"><span>Subtotal <span class="summary-muted">(items)</span></span><strong id="bagSubtotal">0 kr</strong></div>
+      <p class="bag-shipping-note">Shipping and any applicable taxes are confirmed during checkout.</p>
+      <button class="button button-dark full-width bag-checkout-button" id="checkoutButton" type="button">Continue to secure checkout <span aria-hidden="true">↗</span></button>
+      <div class="bag-payment-note"><span class="bag-lock" aria-hidden="true">⌑</span><span>Secure payment powered by PayPal</span></div>
+      <div class="bag-summary-divider"></div>
+      <p class="bag-summary-footnote">Your bag is saved in this browser while you shop on this device.</p>
+      <a class="bag-back-to-shop" href="shop.html">Keep exploring <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+</main>
 <footer class="calm-footer"><a class="calm-wordmark" href="index.html">YAZONISTORE</a><nav aria-label="Footer"><a href="faq.html">FAQ</a><a href="shipping.html">Shipping</a><a href="contact.html">Contact</a></nav><span>© <span data-year></span> Yazonistore</span></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=bag-image-fix-20261017g"></script><script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script><script>
 const menuButton=document.querySelector('.store-menu-toggle'),mobileNav=document.querySelector('#storeMobileNav');
