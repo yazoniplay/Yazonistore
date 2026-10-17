@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8f7f4">
+<meta name="theme-color" content="#f3f2eb">
 <meta name="description" content="Useful everyday products, chosen well. Shop Yazonistore.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yazonistore">
@@ -16,34 +16,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=calm-store-20261017c">
-<link rel="stylesheet" href="premium.css?v=calm-store-20261017c">
+<link rel="stylesheet" href="premium.css?v=shopify-storefront-20261017d">
 </head>
-<body class="premium-calm">
-<header class="calm-header">
-<a class="calm-wordmark" href="index.html">YAZONISTORE</a>
-<nav class="calm-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><button class="calm-bag" type="button" data-open-bag>Bag <span data-bag-count>0</span></button></nav>
+<body class="premium-calm shopify-inspired">
+<div class="store-announcement">A LITTLE BETTER, EVERY DAY <span>·</span> DISCOVER THE COLLECTION</div>
+<header class="calm-header shopify-header">
+<button class="store-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="storeMobileNav"><span></span><span></span><span></span></button>
+<a class="calm-wordmark" href="index.html" aria-label="Yazonistore home">YAZONISTORE<span class="wordmark-dot">.</span></a>
+<nav class="calm-nav store-desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop all</a><a href="#products">Featured</a><a href="faq.html">Help</a></nav>
+<div class="store-header-actions"><a class="store-search-link" href="shop.html" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg><span>Search</span></a><button class="calm-bag" type="button" data-open-bag>Bag <span data-bag-count>0</span></button></div>
 </header>
+<nav class="store-mobile-nav" id="storeMobileNav" aria-label="Mobile navigation" hidden><a href="shop.html">Shop all <span>↗</span></a><a href="#products">Featured products <span>↓</span></a><a href="faq.html">Help &amp; FAQ <span>↗</span></a><a href="shipping.html">Shipping &amp; returns <span>↗</span></a><a href="contact.html">Contact us <span>↗</span></a></nav>
 <main>
 <section class="calm-hero">
 <div class="calm-hero-copy">
-<p class="calm-kicker">Yazonistore / Everyday essentials</p>
-<h1>Useful things.<br><em>Chosen well.</em></h1>
-<p>A small, considered collection for better everyday spaces. Straightforward products, clear pricing, no unnecessary noise.</p>
-<a class="calm-link" href="#products">Explore the collection <span aria-hidden="true">↘</span></a>
+<p class="calm-kicker">EVERYDAY FINDS, BETTER CHOSEN</p>
+<h1>Good things<br>for <em>every day.</em></h1>
+<p>Discover useful finds for your desk, your home and everything in between. Great products, clear prices, easy shopping.</p>
+<a class="calm-link" href="#products">Shop the collection <span aria-hidden="true">↗</span></a>
 </div>
 <div class="calm-hero-image"><img src="https://ledmegastore.se/223175-large_default/monitor-light-bar-cctrgb-44cm-rgb-backlight.jpg" alt="RGB monitor light bar" fetchpriority="high"></div>
 </section>
 <section class="calm-products" id="products">
-<div class="calm-section-head"><div><p class="calm-kicker">The current collection</p><h2>Made for everyday.</h2></div><p>Useful details. Honest descriptions.<br>Nothing here just to fill a grid.</p></div>
+<div class="calm-section-head"><div><p class="calm-kicker">PICKS WORTH A LOOK</p><h2>Shop the collection.</h2></div><p>Good finds. Straightforward prices.<br>Find your next everyday favourite.</p></div>
 <div id="homeProducts" class="calm-product-grid" aria-live="polite"></div>
 <div id="homeEmpty" class="reset-empty" hidden>No products are available right now. Please check back soon.</div>
-<div class="calm-products-bottom"><span>Showing the current collection</span><a href="shop.html">View all products ↗</a></div>
+<div class="calm-products-bottom"><span>Find something you love.</span><a href="shop.html">Shop all products ↗</a></div>
 </section>
 </main>
 <footer class="calm-footer"><a class="calm-wordmark" href="index.html">YAZONISTORE</a><nav aria-label="Footer"><a href="faq.html">FAQ</a><a href="shipping.html">Shipping</a><a href="contact.html">Contact</a></nav><span>© <span data-year></span> Yazonistore</span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js?v=calm-store-20261017c"></script>
-<script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
+<script>
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+const menuButton=document.querySelector('.store-menu-toggle'),mobileNav=document.querySelector('#storeMobileNav');
+if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');mobileNav.hidden=!open;document.body.classList.toggle('store-menu-open',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu');document.body.classList.remove('store-menu-open')}));}
+</script>
 </body>
 </html>
