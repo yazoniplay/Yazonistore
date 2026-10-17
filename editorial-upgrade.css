@@ -234,3 +234,6 @@ img.image-failed{opacity:0!important}
  .calm-footer nav{gap:18px!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Full-bleed editorial hero: remove the legacy content-width constraint. */
+.calm-hero{width:100vw!important;max-width:none!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important}
