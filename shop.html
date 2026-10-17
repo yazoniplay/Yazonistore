@@ -9,15 +9,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=atelier-luxe-20261016b">
+<link rel="stylesheet" href="styles.css?v=atelier-luxe-20261017a">
 </head>
 <body class="premium-store luxury-store">
-<div class="luxury-announcement">THE YAZONI EDIT <span>—</span> OBJECTS FOR EVERYDAY LIVING</div>
+<div class="luxury-announcement">Complimentary delivery on orders over 800 kr <span>—</span> Thoughtfully chosen, always</div>
 <header class="luxury-header">
-<a class="luxury-wordmark" href="index.html" aria-label="Yazonistore home">YAZONI<span>®</span></a>
+<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
+<a class="luxury-wordmark" href="index.html" aria-label="Yazonistore home">YAZONISTORE</a>
 <nav aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html#trending">New & noteworthy</a><a href="about.html">Our story</a></nav>
 <div class="luxury-actions"><a href="shop.html" aria-label="Search products" class="luxury-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></a><button type="button" data-open-bag class="luxury-bag">Bag <span data-bag-count>0</span></button></div>
 </header>
+<nav class="mobile-nav-overlay" id="mobileNav" aria-label="Mobile navigation"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="shipping.html">Shipping &amp; returns</a><a href="contact.html">Contact</a><p>Useful things, chosen with care.</p></nav>
+
 <main class="minimal-shop section-wrap">
 <div class="minimal-shop-heading">
 <div><p class="eyebrow">THE YAZONI COLLECTION</p><h1>Shop <em>all.</em></h1></div>
@@ -42,5 +45,9 @@
 <footer class="site-footer premium-footer"><a class="wordmark" href="index.html">yazoni<span>.</span></a><div class="footer-links"><a href="shop.html">Shop</a><a href="faq.html">FAQ</a></div><div class="footer-bottom premium-footer-bottom"><span>© <span data-year></span> Yazonistore</span></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=atelier-luxe-20261016b"></script>
+<script>
+const menuButton=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('.mobile-nav-overlay');
+if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobileNav.classList.toggle('is-open',open);document.body.classList.toggle('no-scroll',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menuButton.setAttribute('aria-expanded','false');mobileNav.classList.remove('is-open');document.body.classList.remove('no-scroll')}));}
+</script>
 </body>
 </html>
