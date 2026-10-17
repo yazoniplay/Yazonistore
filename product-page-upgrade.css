@@ -149,3 +149,25 @@
  .calm-detail-wrap .detail-copy{grid-column:2!important;grid-row:1!important}
  .calm-detail-wrap .detail-buybox{grid-column:2!important;grid-row:2!important;margin-top:22px!important}
 }
+
+
+/* Actual layout fix: store.css caps main children at 1180px; override that parent rule here. */
+@media(min-width:1101px){
+ main>.calm-detail-wrap{
+   width:min(calc(100% - 48px),1600px)!important;
+   max-width:1600px!important;
+   margin-left:auto!important;
+   margin-right:auto!important;
+   padding-left:clamp(24px,3vw,52px)!important;
+   padding-right:clamp(24px,3vw,52px)!important;
+ }
+ main>.calm-detail-wrap .product-detail-page{
+   width:100%!important;
+   grid-template-columns:minmax(0,1.12fr) minmax(300px,1fr) minmax(280px,.9fr)!important;
+   column-gap:clamp(24px,2.2vw,38px)!important;
+ }
+}
+@media(min-width:1101px) and (max-width:1250px){
+ main>.calm-detail-wrap{width:calc(100% - 40px)!important;padding-left:24px!important;padding-right:24px!important}
+ main>.calm-detail-wrap .product-detail-page{grid-template-columns:minmax(0,1fr) minmax(280px,1fr)!important}
+}
