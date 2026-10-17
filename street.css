@@ -1,5 +1,5 @@
 /* YAZONISTORE / DROP CULTURE */
-:root{--street:#0b0b0b;--street-panel:#151515;--street-line:#303030;--street-text:#f5f5f2;--street-muted:#a0a0a0;--street-accent:#e8e5df}
+:root{--street:#0b0b0b;--street-panel:#151515;--street-line:#303030;--street-text:#f5f5f2;--street-muted:#a0a0a0;--street-accent:#dedbd4}
 html{background:var(--street);color-scheme:dark}
 body.luxury-store{background:var(--street)!important;color:var(--street-text)!important;font-family:Arial,Helvetica,sans-serif;letter-spacing:0}
 body.luxury-store a{color:inherit}
