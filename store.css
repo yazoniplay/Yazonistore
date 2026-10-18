@@ -223,3 +223,9 @@ html body .mobile-nav-overlay.is-open{display:none!important}
 html body .store-global-mobile-nav{display:none!important}
 html body .store-global-mobile-nav.is-open{display:grid!important}
 html body .store-global-bag:hover,html body .detail-add-cart:hover,html body .store-cta-button:hover,html body .bag-bottom #drawerCheckoutButton:hover{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
+
+
+/* No accent hues on hover; preserve the specified logo typography at every breakpoint. */
+html body header.store-global-header .store-global-brand{font-size:13px!important;letter-spacing:.3em!important}
+html body header.store-global-header .store-global-links>a:hover,html body .store-global-mobile-nav>a:hover{color:#55554F!important}
+html body .quick-add:hover,html body .product-buy-now:hover,html body .button-dark:hover,html body .button-outline:hover{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
