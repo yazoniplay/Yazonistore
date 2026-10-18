@@ -787,3 +787,8 @@ body.aura-dark .aura-demo-highlight{outline:1px solid rgba(255,158,59,.8);box-sh
  body.aura-dark .aura-bundle-price small{max-width:110px}
 }
 @media(prefers-reduced-motion:reduce){body.aura-dark .aura-review-track{animation:none}body.aura-dark .aura-finish-swatch,body.aura-dark .aura-add-button{transition:none!important}}
+
+body.aura-dark .aura-variant-disclosure{font-size:10px;line-height:1.5;color:#938a80;margin:7px 0 12px}
+body.aura-dark .aura-reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+body.aura-dark .aura-reveal.aura-revealed{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){body.aura-dark .aura-reveal{opacity:1;transform:none;transition:none}}
