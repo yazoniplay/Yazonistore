@@ -323,3 +323,14 @@ body:has(.checkout-state) .button-dark{background:var(--charcoal)!important;colo
   body.yz-one .yz-ticker-group{justify-content:center}
   body.yz-one .detail-photo:hover img,body.yz-one .product-image-wrap:hover img{transform:none!important}
 }
+
+/* Product detail route shares the same Supabase-bound template as the homepage. */
+body.yz-one:not(.home-product-page) #productDetail>.product-detail-page{display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;align-items:start;gap:clamp(24px,4vw,48px)!important}
+body.yz-one:not(.home-product-page) #productDetail .detail-conversion{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+body.yz-one .yz-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+@media(max-width:900px){
+ body.yz-one:not(.home-product-page) #productDetail>.product-detail-page{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:20px!important}
+}
+@media(max-width:620px){
+ body.yz-one:not(.home-product-page) #productDetail>.product-detail-page{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+}
