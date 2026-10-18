@@ -215,3 +215,11 @@ html body .bag-drawer .empty-state p,html body .bag-bottom>p,html body .bag-bott
 html body .bag-bottom #drawerCheckoutButton{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
 html body .bag-drawer .close-button,html body .bag-drawer .qty-control button{background:transparent!important;color:#62625C!important;border-color:#DEDAD2!important}
 @media(max-width:760px){html body header.store-global-header{top:32px!important}html body .store-global-mobile-nav{top:96px!important}}
+
+
+/* Legacy page-specific mobile menus are superseded by the shared accessible menu. */
+html body .mobile-nav-overlay,html body .store-mobile-nav{display:none!important}
+html body .mobile-nav-overlay.is-open{display:none!important}
+html body .store-global-mobile-nav{display:none!important}
+html body .store-global-mobile-nav.is-open{display:grid!important}
+html body .store-global-bag:hover,html body .detail-add-cart:hover,html body .store-cta-button:hover,html body .bag-bottom #drawerCheckoutButton:hover{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
