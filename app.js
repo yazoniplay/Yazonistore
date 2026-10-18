@@ -209,7 +209,7 @@ function renderDetail(){
 const root=$("#productDetail");if(!root)return;
 const id=new URLSearchParams(location.search).get("id");
 const home=!!document.querySelector("#productTemplate")&&!id;
-const p=product(id)||(home?products[0]:null);
+const p=product(id)||(home?products.find(x=>String(x.name||"").trim().toLowerCase()==="satin pillowcase gift set"):null);
 if(!p){root.innerHTML='<div class="empty-state large-empty"><h1>This product is not available right now.</h1><p>Please check back soon.</p></div>';return}
 const imgs=[...new Set(((p.images&&p.images.length)?p.images:[p.image]).filter(Boolean))];
 const template=$("#productTemplate");
