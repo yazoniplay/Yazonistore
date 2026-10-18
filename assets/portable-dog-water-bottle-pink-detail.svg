@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative portable dog water bottle</title><desc id="desc">Original vector illustration of a #E98AA7 portable dog water bottle with an integrated drinking bowl and carry strap. This is an illustration, not a supplier photograph.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7F5F0"/><stop offset="1" stop-color="#E7E3DA"/></linearGradient><linearGradient id="body" x1="0" y1="0" x2="1" y2=".2"><stop offset="0" stop-color="#F8C1D0"/><stop offset=".48" stop-color="#E98AA7"/><stop offset="1" stop-color="#E98AA7" stop-opacity=".78"/></linearGradient><linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E98AA7" stop-opacity=".9"/><stop offset="1" stop-color="#E98AA7" stop-opacity=".6"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="22"/></filter></defs>
+<rect width="1000" height="1250" fill="url(#bg)"/>
+<ellipse cx="500" cy="1040" rx="235" ry="45" fill="#34322F" opacity=".14" filter="url(#shadow)"/>
+<g transform="translate(35 0) rotate(-7 500 650)">
+<path d="M665 390 C825 420 850 680 785 865 C765 925 735 950 710 920" fill="none" stroke="#34322F" stroke-width="26" stroke-linecap="round" opacity=".72"/>
+<path d="M665 390 C825 420 850 680 785 865 C765 925 735 950 710 920" fill="none" stroke="#F7F5F0" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+<path d="M365 370 Q350 340 385 320 L615 320 Q650 340 635 370 L650 430 Q695 465 700 525 L700 900 Q700 960 640 975 L360 975 Q300 960 300 900 L300 525 Q305 465 350 430 Z" fill="url(#body)" stroke="#2B2B2B" stroke-opacity=".14" stroke-width="5"/>
+<path d="M370 405 Q365 380 390 375 L610 375 Q635 380 630 405 L640 455 Q650 475 650 520 L650 875 Q650 915 610 930 L390 930 Q350 915 350 875 L350 520 Q350 475 360 455 Z" fill="#FFFFFF" opacity=".13"/>
+<rect x="420" y="270" width="160" height="80" rx="22" fill="#E98AA7" stroke="#2B2B2B" stroke-opacity=".18" stroke-width="5"/>
+<path d="M330 292 Q500 230 670 292 L690 340 Q680 395 610 408 L390 408 Q320 395 310 340 Z" fill="url(#bowl)" stroke="#2B2B2B" stroke-opacity=".2" stroke-width="6"/>
+<ellipse cx="500" cy="300" rx="170" ry="50" fill="#F8C1D0" stroke="#2B2B2B" stroke-opacity=".18" stroke-width="5"/>
+<ellipse cx="500" cy="302" rx="128" ry="26" fill="#D7EEF0" opacity=".78"/>
+<path d="M372 305 Q500 350 628 305" fill="none" stroke="#FFFFFF" stroke-width="7" opacity=".7"/>
+<rect x="453" y="510" width="94" height="70" rx="18" fill="#2B2B2B" opacity=".82"/>
+<circle cx="500" cy="545" r="16" fill="#F7F5F0"/>
+<path d="M425 650 Q500 680 575 650" fill="none" stroke="#FFFFFF" stroke-width="7" opacity=".32" stroke-linecap="round"/>
+<path d="M395 720 L395 860" stroke="#FFFFFF" stroke-width="12" opacity=".24" stroke-linecap="round"/>
+<path d="M370 960 Q500 990 630 960" fill="none" stroke="#2B2B2B" stroke-opacity=".1" stroke-width="5"/>
+</g>
+<text x="500" y="1130" font-family="Arial,sans-serif" font-size="22" letter-spacing="4" fill="#55554F" text-anchor="middle">ILLUSTRATIVE PRODUCT RENDER</text>
+</svg>
