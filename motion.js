@@ -1,7 +1,6 @@
 (()=>{"use strict";
 if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
-document.documentElement.classList.add("js-motion");
 const init=()=>{
  const header=$("header");if(header)header.classList.add("motion-intro-header");
  const intro=$(".product-detail-root,main>section,main .page-main,main .section-wrap,.checkout-state");if(intro)intro.classList.add("motion-intro-section");
@@ -24,7 +23,8 @@ const init=()=>{
  countObserver.observe(document.body,{childList:true,characterData:true,subtree:true});
  addEventListener("resize",setupSticky,{passive:true});
  const grid=$("#productGrid");if(grid){const loading=()=>grid.classList.toggle("motion-loading",/^loading(?: products)?…?$/i.test(grid.textContent.trim()));new MutationObserver(loading).observe(grid,{childList:true,subtree:true,characterData:true});loading()}
- $$("details").forEach(d=>{const s=$("summary",d);if(!s||s.querySelector(".motion-plus"))return;const icon=document.createElement("span");icon.className="motion-plus";icon.setAttribute("aria-hidden","true");s.append(icon)});
+ $("details").forEach(d=>{const s=$("summary",d);if(!s||s.querySelector(".motion-plus"))return;const icon=document.createElement("span");icon.className="motion-plus";icon.setAttribute("aria-hidden","true");s.append(icon)});
+ document.documentElement.classList.add("js-motion");
 };
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })();
