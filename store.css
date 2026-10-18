@@ -188,3 +188,16 @@ main{width:100%;min-width:0}
 }
 @media(min-width:761px){.detail-add-cart{position:static!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+
+/* Final contrast and palette guardrails; these outrank legacy runtime shell styles. */
+html body{background:#F7F5F0!important;color:#62625C!important}
+html body.premium-calm,html body.premium-store,html body.luxury-store,html body.shopify-inspired{background:#F7F5F0!important;color:#62625C!important}
+html body header.store-global-header{background:#F7F5F0!important;color:#62625C!important;border-bottom:1px solid #DEDAD2!important}
+html body .store-announcement,html body .luxury-announcement{background:#2B2B2B!important;color:#C9C6BF!important}
+html body .store-global-brand,html body .store-global-links>a,html body .store-global-mobile-nav>a{color:#62625C!important}
+html body .store-global-bag,html body .detail-add-cart,html body .store-cta-button{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
+html body .store-footer,html body .calm-footer,html body .site-footer,html body .luxury-footer,html body .minimal-footer{background:#2B2B2B!important;color:#C9C6BF!important}
+html body .store-footer a,html body .calm-footer a,html body .site-footer a,html body .luxury-footer a,html body .minimal-footer a{color:#C9C6BF!important}
+html body .detail-conversion-title,html body .store-section h2,html body h1,html body h2,html body h3{color:#55554F!important}
+html body .detail-conversion-price,html body .detail-conversion-description,html body .detail-benefit-list li,html body .detail-trust-item,html body .store-section p,html body .store-details-list span,html body .store-accordion-list summary,html body .store-accordion-list details p{color:#62625C!important}
