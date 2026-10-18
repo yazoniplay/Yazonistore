@@ -47,7 +47,7 @@
 </article>
 </template>
 <footer class="store-footer"><div class="store-footer-inner"><a class="store-wordmark" href="index.html">YAZONISTORE</a><nav aria-label="Footer navigation"><a href="faq.html">FAQ</a><a href="shipping.html">Shipping &amp; returns</a><a href="contact.html">Contact</a></nav><span class="copyright">© <span data-year></span> Yazonistore</span></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=dog-bottle-20261018c"></script><script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script><script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js?v=dog-bottle-20261018d"></script><script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script><script>
 const menuButton=document.querySelector('.store-menu-toggle'),mobileNav=document.querySelector('#storeMobileNav');
 if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');mobileNav.hidden=!open;document.body.classList.toggle('store-menu-open',open)});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu');document.body.classList.remove('store-menu-open')}));}
 </script>
