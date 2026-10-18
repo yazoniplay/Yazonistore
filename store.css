@@ -1,4 +1,4 @@
-/* Yazonistore — single public storefront stylesheet.
+/* AuraFlame — single public storefront stylesheet.
    The .yz-one wrapper intentionally outranks app.js's runtime-injected theme rules.
    app.js, cart state, product loading, and checkout logic are not changed. */
 :root{
