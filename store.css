@@ -229,3 +229,8 @@ html body .store-global-bag:hover,html body .detail-add-cart:hover,html body .st
 html body header.store-global-header .store-global-brand{font-size:13px!important;letter-spacing:.3em!important}
 html body header.store-global-header .store-global-links>a:hover,html body .store-global-mobile-nav>a:hover{color:#55554F!important}
 html body .quick-add:hover,html body .product-buy-now:hover,html body .button-dark:hover,html body .button-outline:hover{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
+
+
+/* Responsive header geometry: three columns on desktop, menu/wordmark/bag on compact screens. */
+@media(min-width:761px){html body header.store-global-header{grid-template-columns:auto minmax(0,1fr) auto!important}}
+@media(max-width:900px){html body header.store-global-header{grid-template-columns:36px minmax(0,1fr) auto!important;height:64px!important;gap:12px!important;padding:0 20px!important}html body .store-global-links{display:none!important}html body .store-global-mobile-nav{top:96px!important}}
