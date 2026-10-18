@@ -392,3 +392,5 @@ body.yz-one .dog-bottle-policy-note a{text-decoration:underline}
  body.yz-one .dog-bottle-swatch{flex:1;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){body.yz-one .yz-pet-promo *,body.yz-one .dog-bottle-swatch{transition:none!important}}
+
+body.yz-one .dog-bottle-quantity-total{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px;margin:8px 0 0;font-size:13px;color:var(--text)}body.yz-one .dog-bottle-quantity-total strong{font:700 16px/1.4 Manrope,Arial,sans-serif;color:var(--heading)}
