@@ -15,6 +15,23 @@
   --ease:250ms ease;
   color-scheme:light;
 }
+/* Reassert design tokens on the wrapper: app.js declares competing :root tokens after this file loads. */
+html body.yz-one{
+  --bg:#F7F5F0;
+  --panel:#EFECE6;
+  --line:#DEDAD2;
+  --charcoal:#2B2B2B;
+  --text:#6A6A64;
+  --heading:#55554F;
+  --text-on-dark:#C9C6BF;
+  --store-paper:#F7F5F0;
+  --store-white:#F7F5F0;
+  --store-surface:#EFECE6;
+  --store-ink:#55554F;
+  --store-muted:#6A6A64;
+  --store-line:#DEDAD2;
+  --store-accent:#2B2B2B;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:92px;background:var(--bg)}
 body.yz-one{margin:0;background:var(--bg)!important;color:var(--text)!important;font-family:Manrope,Arial,sans-serif!important;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
