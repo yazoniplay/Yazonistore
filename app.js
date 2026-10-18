@@ -221,7 +221,7 @@ if(template){
   if(main){if(imgs[0])main.src=imgs[0];else{main.removeAttribute("src");const box=main.closest(".detail-photo");if(box){box.classList.add("image-placeholder");box.dataset.imageInitial=(String(p.name||"Y").trim().charAt(0)||"Y").toUpperCase();}}main.alt=p.name+" — product image";main.dataset.productId=String(p.id);}
   const title=fragment.querySelector("[data-template-name]");if(title)title.textContent=p.name;
   const price=fragment.querySelector("[data-template-price]");if(price)price.textContent=money(p.price);
-  const description=fragment.querySelector("[data-template-description]");if(description)description.textContent=p.description||"";
+  const description=fragment.querySelector("[data-template-description]");if(description)description.textContent=p.description||description.textContent;
   const add=fragment.querySelector("[data-add]");if(add){add.dataset.add=String(p.id);add.dataset.addQty="1";}
   const thumbs=fragment.querySelector("[data-template-thumbnails]");
   if(thumbs&&imgs.length>1){thumbs.hidden=false;thumbs.innerHTML=imgs.map((src,i)=>'<button type="button" class="detail-thumb '+(i===0?"active":"")+'" data-gallery-index="'+i+'" aria-label="View product image '+(i+1)+'"><img src="'+esc(src)+'" alt="" loading="lazy" decoding="async"></button>').join("");}
