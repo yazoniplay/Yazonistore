@@ -516,33 +516,12 @@ body.aura-dark .store-global-mobile-nav{background:rgba(18,18,18,.98)!important;
 body.aura-dark .store-global-mobile-nav a{color:#f5f1ea!important;border-color:#ffffff14!important}
 body.aura-dark .aura-hero{position:relative;isolation:isolate}
 body.aura-dark .aura-hero-glow{background:radial-gradient(circle,rgba(255,158,59,.27),rgba(255,158,59,.06) 42%,transparent 72%);filter:blur(24px);animation:auraGlow 4.5s ease-in-out infinite}
-body.aura-dark .aura-hero-image img,body.aura-dark .aura-story-image img,body.aura-dark .aura-gallery img,body.aura-dark .aura-product-main-image img,body.aura-dark .aura-demo-art img{mix-blend-mode:screen}
 body.aura-dark .aura-button,body.aura-dark .aura-btn{background:#ff9e3b!important;color:#20160c!important;border:0!important;border-radius:999px!important;font-weight:800!important;box-shadow:0 8px 28px #ff9e3b20!important;transition:transform .2s,box-shadow .2s!important}
 body.aura-dark .aura-button:hover,body.aura-dark .aura-btn:hover{transform:translateY(-2px);box-shadow:0 10px 36px #ff9e3b55!important}
-body.aura-dark .aura-demo-added{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;padding:72px 0;margin:40px auto;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}
-body.aura-dark .aura-demo-copy h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.06em;margin:0 0 16px;color:#f5f1ea}
-body.aura-dark .aura-demo-copy>p:not(.aura-eyebrow){font-size:13px;color:#aaa197;line-height:1.85}
 body.aura-dark .aura-swatches{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:24px 0}
 body.aura-dark .aura-swatches button{display:flex;align-items:center;gap:10px;padding:10px;background:#1a1917;color:#ded5ca;border:1px solid #ffffff16;border-radius:10px;font-size:11px;cursor:pointer;text-align:left}
 body.aura-dark .aura-swatches button[aria-pressed=true]{border-color:#ff9e3b;background:#2a2118}
 body.aura-dark .aura-swatches i{display:inline-block;width:17px;height:17px;border-radius:50%;box-shadow:0 0 12px currentColor}
-body.aura-dark .swatch-amber{background:#ff9e3b;color:#ff9e3b}.swatch-purple{background:#a95bff;color:#a95bff}.swatch-green{background:#47bf76;color:#47bf76}.swatch-cyan{background:#4ad5ed;color:#4ad5ed}
-body.aura-dark .aura-demo-toggles{display:flex;gap:10px;flex-wrap:wrap}
-body.aura-dark .aura-demo-toggles button{border:1px solid #ffffff1a;background:#201e1b;color:#f0e5d8;border-radius:999px;padding:11px 14px;font-size:10px;cursor:pointer}
-body.aura-dark .aura-demo-toggles button[aria-pressed=true]{border-color:#ff9e3b;color:#ffb25c}
-body.aura-dark .aura-demo-disclaimer{font-size:10px!important;color:#8e857b!important}
-body.aura-dark .aura-demo-art{min-height:390px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #ffffff12;border-radius:22px;background:radial-gradient(ellipse at center,#211b14,#141312 65%);isolation:isolate}
-body.aura-dark .aura-demo-art img{z-index:1;position:relative;width:90%;height:350px;object-fit:contain;filter:drop-shadow(0 20px 25px #0008)}
-body.aura-dark .aura-demo-halo{position:absolute;z-index:0;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ff9e3b42,#ff9e3b0c 46%,transparent 72%);filter:blur(20px);animation:auraGlow 4s ease-in-out infinite}
-body.aura-dark .aura-demo-art[data-glow=purple] .aura-demo-halo{background:radial-gradient(circle,#a95bff55,#a95bff12 46%,transparent 72%)}
-body.aura-dark .aura-demo-art[data-glow=green] .aura-demo-halo{background:radial-gradient(circle,#47bf7650,#47bf7612 46%,transparent 72%)}
-body.aura-dark .aura-demo-art[data-glow=cyan] .aura-demo-halo{background:radial-gradient(circle,#4ad5ed50,#4ad5ed12 46%,transparent 72%)}
-body.aura-dark .aura-demo-mist{position:absolute;z-index:2;top:17%;left:38%;height:42%;width:25%;pointer-events:none}
-body.aura-dark .aura-demo-mist i{position:absolute;bottom:0;left:50%;width:23px;height:80px;border-radius:50%;background:linear-gradient(0deg,#ffffff18,#ffffff03);filter:blur(10px);animation:auraMist 3.5s ease-in-out infinite}
-body.aura-dark .aura-demo-mist i:nth-child(2){left:28%;animation-delay:-1s}body.aura-dark .aura-demo-mist i:nth-child(3){left:70%;animation-delay:-2s}body.aura-dark .aura-demo-mist i:nth-child(4){left:42%;animation-delay:-2.5s}
-body.aura-dark .aura-demo-art.mist-disabled .aura-demo-mist{opacity:0}
-body.aura-dark .aura-demo-art.remote-preview{outline:1px solid #ff9e3b66;box-shadow:0 0 35px #ff9e3b15}
-body.aura-dark .aura-demo-status{position:absolute;top:16px;left:18px;z-index:3;color:#d9b88d;font-size:8px;letter-spacing:.14em}
 body.aura-dark .aura-reviews-placeholder{display:grid;grid-template-columns:1fr .6fr;gap:35px;align-items:center;padding:70px 0;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}
 body.aura-dark .aura-reviews-placeholder h2{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.06em;margin:0 0 12px}
 body.aura-dark .aura-reviews-placeholder h2 em{font-family:Georgia,serif;color:#ff9e3b;font-weight:400}
@@ -561,10 +540,10 @@ body.aura-dark .bag-shipping-progress small{font-size:9px;color:#92887d;line-hei
 body.aura-dark .bag-overlay{background:#000b!important;backdrop-filter:blur(5px)}
 body.aura-dark .bag-drawer{background:#151413!important;color:#f5f1ea!important;border-left:1px solid #ff9e3b2b;box-shadow:-25px 0 70px #000a!important}
 body.aura-dark .drawer-header{border-color:#ffffff18!important}body.aura-dark .drawer-header .eyebrow{color:#d0a06c!important}body.aura-dark .drawer-header h2,body.aura-dark .bag-line h3{color:#f5f1ea!important}body.aura-dark .close-button{background:#211f1c!important;color:#f5f1ea!important;border-color:#ffffff22!important}body.aura-dark .bag-line{border-color:#ffffff16!important}body.aura-dark .bag-line>img{background:#211f1c!important}body.aura-dark .bag-line p,body.aura-dark .bag-bottom>p,body.aura-dark .bag-bottom>small{color:#a89e93!important}body.aura-dark .bag-bottom{background:#151413!important;border-color:#ffffff1c!important}body.aura-dark .bag-bottom .subtotal strong{color:#f5f1ea!important}body.aura-dark .bag-bottom #drawerCheckoutButton{background:#ff9e3b!important;color:#21170d!important;border:0!important;border-radius:999px!important}body.aura-dark .drawer-view-bag{color:#d5c7b6!important}
-@keyframes auraGlow{0%,100%{opacity:.7;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}@keyframes auraMist{0%,100%{transform:translateY(12px) scale(.75);opacity:.1}50%{transform:translateY(-22px) scale(1.2);opacity:.8}}@keyframes auraFlame{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}@keyframes auraShimmer{to{left:150%}}@keyframes auraCountPop{0%{transform:scale(1)}45%{transform:scale(1.35)}100%{transform:scale(1)}}
+@keyframes auraGlow{0%,100%{opacity:.7;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}@keyframes auraFlame{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}@keyframes auraShimmer{to{left:150%}}@keyframes auraCountPop{0%{transform:scale(1)}45%{transform:scale(1.35)}100%{transform:scale(1)}}
 @media(max-width:1050px){body.aura-dark .store-global-header{gap:12px!important;padding:0 18px!important}body.aura-dark .store-global-links{gap:10px!important}body.aura-dark .store-global-links a{font-size:9px!important}}
 @media(max-width:850px){body.aura-dark .store-global-header{height:70px!important;gap:12px!important}body.aura-dark .store-global-menu-toggle{display:flex!important;width:38px!important;height:38px!important;border:1px solid #ffffff24!important;border-radius:50%!important;background:transparent!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;gap:5px!important}body.aura-dark .store-global-menu-toggle span{width:15px!important;height:1px!important;background:#eee!important}body.aura-dark .store-global-links{display:none!important}body.aura-dark .store-global-brand{margin-right:auto!important;font-size:15px!important}body.aura-dark .store-global-actions{gap:6px!important}body.aura-dark .store-global-mobile-nav{top:104px!important}}
-@media(max-width:600px){body.aura-dark .aura-demo-added{grid-template-columns:1fr;gap:25px;padding:45px 0}body.aura-dark .aura-demo-art{min-height:320px}body.aura-dark .aura-demo-art img{height:290px}body.aura-dark .aura-reviews-placeholder{grid-template-columns:1fr;gap:18px;padding:45px 0}body.aura-dark .aura-trust-badges{grid-template-columns:1fr}body.aura-dark .bag-shipping-progress{padding:14px 18px}body.aura-dark .store-global-header{padding:0 12px!important}body.aura-dark .store-global-brand{font-size:13px!important}body.aura-dark .aura-product-page{width:calc(100% - 32px)}}
+@media(max-width:600px){body.aura-dark .aura-reviews-placeholder{grid-template-columns:1fr;gap:18px;padding:45px 0}body.aura-dark .aura-trust-badges{grid-template-columns:1fr}body.aura-dark .bag-shipping-progress{padding:14px 18px}body.aura-dark .store-global-header{padding:0 12px!important}body.aura-dark .store-global-brand{font-size:13px!important}body.aura-dark .aura-product-page{width:calc(100% - 32px)}}
 @media(prefers-reduced-motion:reduce){body.aura-dark *{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
 
@@ -712,13 +691,6 @@ body.aura-dark .aura-finish-swatch:hover{transform:translateY(-2px);border-color
 body.aura-dark .aura-finish-swatch.is-selected{border-color:#FF9E3B;background:rgba(255,158,59,.08);box-shadow:0 0 0 1px rgba(255,158,59,.15)}
 body.aura-dark .aura-finish-swatch img{width:46px;height:46px;object-fit:cover;border-radius:9px;background:#292929}
 body.aura-dark .aura-finish-swatch span{font-size:12px;font-weight:700}
-body.aura-dark .aura-video-card{display:flex;align-items:center;gap:13px;width:100%;padding:10px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:#1b1b1b;color:#fff;text-align:left;cursor:pointer;margin-top:12px}
-body.aura-dark .aura-video-thumb{position:relative;width:88px;height:62px;flex-shrink:0;border-radius:10px;overflow:hidden;background:#26211b}
-body.aura-dark .aura-video-thumb img{width:100%;height:100%;object-fit:cover}
-body.aura-dark .aura-video-play{position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.25);font-size:20px;color:#FFB566}
-body.aura-dark .aura-video-card>span:last-child{display:grid;gap:5px}
-body.aura-dark .aura-video-card strong{font-size:13px}
-body.aura-dark .aura-video-card small{font-size:11px;color:#aaa29a}
 body.aura-dark .aura-bundle-panel{border:1px solid rgba(255,158,59,.2);background:#191919;border-radius:16px;padding:16px;margin:20px 0}
 body.aura-dark .aura-bundle-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
 body.aura-dark .aura-bundle-heading h2{font-size:17px;margin:0;color:#fff}
@@ -765,7 +737,6 @@ body.aura-dark .aura-review-card p{font-size:15px;line-height:1.65;color:#f0ebe4
 body.aura-dark .aura-review-card span{font-size:10px;line-height:1.5;color:#a9a096}
 body.aura-dark .aura-review-note{font-size:11px;line-height:1.6;color:#8f887f;margin-top:14px}
 body.aura-dark .aura-faq-anchor{margin-bottom:32px}
-body.aura-dark .aura-demo-highlight{outline:1px solid rgba(255,158,59,.8);box-shadow:0 0 28px rgba(255,158,59,.14)}
 @keyframes auraReviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:980px){
  body.aura-dark .aura-buy-layout{grid-template-columns:minmax(0,1fr);gap:28px}
@@ -792,3 +763,72 @@ body.aura-dark .aura-variant-disclosure{font-size:10px;line-height:1.5;color:#93
 body.aura-dark .aura-reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
 body.aura-dark .aura-reveal.aura-revealed{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){body.aura-dark .aura-reveal{opacity:1;transform:none;transition:none}}
+
+
+/* AuraFlame product page — restrained Scandinavian finish */
+body.aura-dark .aura-product-page{max-width:1280px;padding:40px 28px 100px}
+body.aura-dark .aura-buy-layout{gap:clamp(38px,6vw,88px);grid-template-columns:minmax(0,1.05fr) minmax(340px,.88fr)}
+body.aura-dark .aura-product-gallery{min-width:0}
+body.aura-dark .aura-main-photo{background:#1c1c1c;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+body.aura-dark .aura-main-photo img{object-fit:contain;mix-blend-mode:normal!important}
+body.aura-dark .aura-thumbnails{gap:10px;margin-top:14px}
+body.aura-dark .aura-thumbnails button{border:1px solid rgba(255,255,255,.08);border-radius:12px;background:#1c1c1c;overflow:hidden}
+body.aura-dark .aura-thumbnails button.is-active{border-color:rgba(255,158,59,.65)}
+body.aura-dark .aura-thumbnails img{mix-blend-mode:normal!important}
+body.aura-dark .aura-product-copy{position:static;top:auto;padding:0}
+body.aura-dark .aura-eyebrow{color:#b9a58d;letter-spacing:.13em;font-size:10px}
+body.aura-dark .aura-product-copy h1{font-size:clamp(32px,3.4vw,46px)!important;line-height:1.12!important;letter-spacing:-.045em!important;margin:0 0 12px!important}
+body.aura-dark .aura-rating-line{margin:0 0 18px;color:#bdb4a9;font-size:12px}
+body.aura-dark .aura-rating-line>span:first-child{color:#e6b477;letter-spacing:.1em}
+body.aura-dark .aura-product-subtitle{max-width:42ch;font-size:14px;line-height:1.8;color:#b9b1a8;margin:0 0 25px}
+body.aura-dark .aura-price-row{margin:0 0 22px;gap:12px}
+body.aura-dark .aura-price-row strong{font-size:30px;color:#f5f1ea;font-weight:700;letter-spacing:-.035em}
+body.aura-dark .aura-price-note{font-size:11px;color:#9f978d}
+body.aura-dark .aura-social-ticker{display:flex;align-items:center;gap:12px;margin:0 0 24px;padding:13px 15px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#191919}
+body.aura-dark .aura-social-ticker>span{font-size:16px}
+body.aura-dark .aura-social-ticker>div{display:grid;gap:4px}
+body.aura-dark .aura-social-ticker strong{font-size:12px;color:#f0e9df;font-weight:600}
+body.aura-dark .aura-social-ticker div span{font-size:11px;line-height:1.5;color:#a99f94}
+body.aura-dark .aura-variant-gallery{margin:0 0 28px}
+body.aura-dark .aura-field-label{margin-bottom:12px;color:#e8e0d6;font-size:12px;font-weight:600}
+body.aura-dark .aura-finish-swatches{gap:10px}
+body.aura-dark .aura-finish-swatch{display:flex;flex-direction:column;align-items:stretch;gap:9px;padding:9px 9px 12px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#1c1c1c;color:#e9e2d8}
+body.aura-dark .aura-finish-swatch:hover{transform:translateY(-1px);border-color:rgba(255,158,59,.4)}
+body.aura-dark .aura-finish-swatch.is-selected{border-color:rgba(255,158,59,.65);background:#211e1a;box-shadow:none}
+body.aura-dark .aura-finish-swatch img{width:100%;max-width:none;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:#242424}
+body.aura-dark .aura-finish-swatch span{font-size:12px;font-weight:500;text-align:left;padding:0 2px}
+body.aura-dark .aura-bundle-panel{margin:0 0 26px;padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:#191919}
+body.aura-dark .aura-bundle-heading{margin-bottom:16px}
+body.aura-dark .aura-bundle-heading h2{font-size:16px;font-weight:600}
+body.aura-dark .aura-bundle-option{padding:15px 13px;border-color:rgba(255,255,255,.08);border-radius:14px;background:#1e1e1e;box-shadow:none}
+body.aura-dark .aura-bundle-option.is-selected{border-color:rgba(255,158,59,.55);background:#24211d;box-shadow:none}
+body.aura-dark .aura-bundle-price strong{color:#f1ebe3}
+body.aura-dark .aura-bundle-price em{color:#d6a66d}
+body.aura-dark .aura-unit-select select{border-radius:12px;border-color:rgba(255,255,255,.1);background:#202020}
+body.aura-dark .aura-bundle-total{border-color:rgba(255,255,255,.08)}
+body.aura-dark .aura-bundle-total strong{color:#f0c18c}
+body.aura-dark .aura-bundle-disclosure{font-size:10px;line-height:1.65;color:#817a72}
+body.aura-dark .aura-muted-note{margin-top:12px}
+body.aura-dark .aura-product-bullets{gap:17px;margin:28px 0}
+body.aura-dark .aura-product-bullets li{font-size:13px;line-height:1.8;color:#bcb4aa}
+body.aura-dark .aura-product-bullets li:before{color:#d9a66d}
+body.aura-dark .aura-add-button,body.aura-dark .aura-product-page .aura-button{border-radius:14px!important;box-shadow:none!important}
+body.aura-dark .aura-add-button:hover,body.aura-dark .aura-product-page .aura-button:hover{box-shadow:0 8px 24px rgba(255,158,59,.12)!important;transform:translateY(-1px)}
+body.aura-dark .aura-trust-badges{gap:9px;margin:14px 0 0}
+body.aura-dark .aura-trust-badges>span{border-radius:14px;border-color:rgba(255,255,255,.07);background:#1b1b1b;padding:14px 12px}
+body.aura-dark .aura-trust-badges b{font-size:10px;font-weight:600}
+body.aura-dark .aura-trust-badges small{color:#958d83}
+body.aura-dark .aura-shipping-note{margin:15px 0 0;color:#817a72;font-size:10px;line-height:1.7}
+body.aura-dark .aura-assurance{display:none}
+body.aura-dark .aura-product-description,body.aura-dark .aura-faq-anchor{margin-top:72px;padding:clamp(28px,5vw,48px);border:1px solid rgba(255,255,255,.07);border-radius:16px;background:#171717}
+body.aura-dark .aura-product-description h2,body.aura-dark .aura-faq-anchor h2{font-size:clamp(25px,3vw,36px);line-height:1.2;letter-spacing:-.04em;font-weight:600}
+body.aura-dark .aura-reviews-section{margin-top:76px;padding:0}
+body.aura-dark .aura-review-card{background:#1c1c1c;border-color:rgba(255,255,255,.07);border-radius:16px;box-shadow:none}
+body.aura-dark .aura-review-card p{color:#e7e0d7}
+body.aura-dark .aura-review-card span{color:#9d958b}
+body.aura-dark .aura-review-note{color:#8d857b}
+body.aura-dark .aura-text-link{color:#e7b77f}
+body.aura-dark .aura-back-link{margin-bottom:34px;color:#a69d92!important}
+body.aura-dark .aura-back-link:hover{color:#f0bc80!important}
+@media(max-width:980px){body.aura-dark .aura-buy-layout{grid-template-columns:1fr;gap:34px}body.aura-dark .aura-product-copy{max-width:760px}body.aura-dark .aura-product-page{padding-inline:22px}}
+@media(max-width:620px){body.aura-dark .aura-product-page{width:100%;padding:20px 16px 72px}body.aura-dark .aura-buy-layout{gap:28px}body.aura-dark .aura-finish-swatches{gap:8px}body.aura-dark .aura-finish-swatch{padding:8px;border-radius:12px}body.aura-dark .aura-finish-swatch span{font-size:11px}body.aura-dark .aura-bundle-panel{padding:14px}body.aura-dark .aura-bundle-option{grid-template-columns:16px minmax(0,1fr) auto;padding:12px 10px;gap:8px}body.aura-dark .aura-bundle-price strong{font-size:12px}body.aura-dark .aura-bundle-price small{font-size:10px}body.aura-dark .aura-trust-badges{grid-template-columns:1fr}}
