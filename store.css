@@ -669,3 +669,5 @@ body.aura-dark .bag-drawer .empty-state .button{display:inline-flex;margin-top:1
  body.aura-dark .bag-drawer{width:100vw!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body.aura-dark #aura-home>section,body.aura-dark .aura-benefits>article,body.aura-dark .aura-story,body.aura-dark .aura-gallery-grid figure{animation:none}}
+
+body.aura-dark .aura-drawer-count{display:inline-flex;min-width:24px;height:24px;align-items:center;justify-content:center;padding:0 7px;margin-left:6px;border-radius:999px;background:#FF9E3B;color:#121212;font-size:12px;font-weight:800;vertical-align:middle}
