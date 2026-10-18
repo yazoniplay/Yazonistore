@@ -157,7 +157,7 @@ html,body{background:var(--store-paper)!important;color:var(--store-ink)!importa
   mobile.id="storeGlobalMobileNav";
   mobile.className="store-global-mobile-nav";
   mobile.setAttribute("aria-label","Store navigation");
-  mobile.innerHTML='<a href="index.html#productDetail">Shop <span>↗</span></a><a href="faq.html">FAQ <span>↗</span></a><a href="shipping.html">Shipping &amp; returns <span>↗</span></a><a href="contact.html">Contact <span>↗</span></a>'+(isAdmin?'<a href="admin.html">Store admin <span>↗</span></a>':'');
+  mobile.innerHTML='<a href="index.html#productDetail">Shop</a><a href="faq.html">FAQ</a><a href="shipping.html">Shipping &amp; returns</a><a href="contact.html">Contact</a>'+(isAdmin?'<a href="admin.html">Store admin <span>↗</span></a>':'');
   header.insertAdjacentElement("afterend",mobile);
   const toggle=header.querySelector(".store-global-menu-toggle");
   toggle.addEventListener("click",()=>{
