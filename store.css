@@ -496,3 +496,73 @@ body.yz-one .site-footer a,body.yz-one .calm-footer a,body.yz-one .minimal-foote
 @media(max-width:900px){body.yz-one .aura-hero{grid-template-columns:1fr;min-height:auto;padding-top:50px}body.yz-one .aura-hero-image{max-width:720px}body.yz-one .aura-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}body.yz-one .aura-story{grid-template-columns:1fr}body.yz-one .aura-product-cta{margin:0 20px 55px}body.yz-one .aura-buy-layout{grid-template-columns:1fr}body.yz-one .aura-product-copy{position:static}body.yz-one .aura-product-page{padding-inline:18px}}
 @media(max-width:560px){body.yz-one .aura-benefits{grid-template-columns:1fr}body.yz-one .aura-gallery-grid{grid-template-columns:1fr}body.yz-one .aura-gallery{padding:55px 18px}body.yz-one .aura-product-cta{grid-template-columns:1fr;margin-inline:14px;padding:25px}body.yz-one .aura-assurance{grid-template-columns:1fr}body.yz-one .aura-thumbnails{grid-template-columns:repeat(3,minmax(0,1fr))}body.yz-one .aura-hero h1{font-size:45px!important}body.yz-one .aura-trust-row{display:grid;gap:8px}}
 @media(prefers-reduced-motion:reduce){body.yz-one .aura-button{transition:none!important}}
+
+/* AuraFlame™ — premium dark conversion layer */
+body.aura-dark,html:has(body.aura-dark){background:#121212!important;color:#f5f1ea!important;color-scheme:dark}
+body.aura-dark{--bg:#121212;--panel:#191817;--line:rgba(255,158,59,.16);--charcoal:#121212;--text:#b7aea4;--heading:#f5f1ea;--gold:#ff9e3b;--white:#f5f1ea;background:#121212!important;color:#f5f1ea!important;font-family:"DM Sans",Manrope,Arial,sans-serif!important}
+body.aura-dark .store-announcement{background:#0c0c0c!important;color:#d6cec3!important;border-bottom:1px solid rgba(255,158,59,.1)!important}
+body.aura-dark .calm-header,body.aura-dark .shopify-header,body.aura-dark .store-global-header{position:sticky!important;top:0!important;z-index:1000!important;background:rgba(18,18,18,.88)!important;color:#f5f1ea!important;border-bottom:1px solid rgba(255,158,59,.15)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important}
+body.aura-dark .calm-header a,body.aura-dark .store-global-header a,body.aura-dark .calm-wordmark{color:#f5f1ea!important}
+body.aura-dark .store-global-header{display:flex!important;height:78px!important;padding:0 clamp(18px,5vw,76px)!important;gap:24px!important}
+body.aura-dark .store-global-brand{font-size:16px!important;letter-spacing:-.04em!important;color:#f5f1ea!important}
+body.aura-dark .store-global-brand:before{content:"♨";color:#ff9e3b;margin-right:7px}
+body.aura-dark .store-global-links{display:flex!important;gap:clamp(12px,1.7vw,24px)!important;justify-content:center!important;align-items:center!important}
+body.aura-dark .store-global-links a{color:#b9b1a8!important;font-size:10px!important;white-space:nowrap}
+body.aura-dark .store-global-links a:hover{color:#ff9e3b!important}
+body.aura-dark .store-global-actions{display:flex!important;align-items:center!important;gap:10px!important}
+body.aura-dark .store-global-bag{background:rgba(255,255,255,.035)!important;border:1px solid rgba(255,255,255,.14)!important;color:#f5f1ea!important;border-radius:999px!important}
+body.aura-dark .store-global-menu-toggle{display:none!important}
+body.aura-dark .store-global-mobile-nav{background:rgba(18,18,18,.98)!important;border-color:rgba(255,158,59,.16)!important}
+body.aura-dark .store-global-mobile-nav a{color:#f5f1ea!important;border-color:#ffffff14!important}
+body.aura-dark .aura-hero{position:relative;isolation:isolate}
+body.aura-dark .aura-hero-glow{background:radial-gradient(circle,rgba(255,158,59,.27),rgba(255,158,59,.06) 42%,transparent 72%);filter:blur(24px);animation:auraGlow 4.5s ease-in-out infinite}
+body.aura-dark .aura-hero-image img,body.aura-dark .aura-story-image img,body.aura-dark .aura-gallery img,body.aura-dark .aura-product-main-image img,body.aura-dark .aura-demo-art img{mix-blend-mode:screen}
+body.aura-dark .aura-button,body.aura-dark .aura-btn{background:#ff9e3b!important;color:#20160c!important;border:0!important;border-radius:999px!important;font-weight:800!important;box-shadow:0 8px 28px #ff9e3b20!important;transition:transform .2s,box-shadow .2s!important}
+body.aura-dark .aura-button:hover,body.aura-dark .aura-btn:hover{transform:translateY(-2px);box-shadow:0 10px 36px #ff9e3b55!important}
+body.aura-dark .aura-demo-added{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;padding:72px 0;margin:40px auto;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}
+body.aura-dark .aura-demo-copy h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.06em;margin:0 0 16px;color:#f5f1ea}
+body.aura-dark .aura-demo-copy>p:not(.aura-eyebrow){font-size:13px;color:#aaa197;line-height:1.85}
+body.aura-dark .aura-swatches{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:24px 0}
+body.aura-dark .aura-swatches button{display:flex;align-items:center;gap:10px;padding:10px;background:#1a1917;color:#ded5ca;border:1px solid #ffffff16;border-radius:10px;font-size:11px;cursor:pointer;text-align:left}
+body.aura-dark .aura-swatches button[aria-pressed=true]{border-color:#ff9e3b;background:#2a2118}
+body.aura-dark .aura-swatches i{display:inline-block;width:17px;height:17px;border-radius:50%;box-shadow:0 0 12px currentColor}
+body.aura-dark .swatch-amber{background:#ff9e3b;color:#ff9e3b}.swatch-purple{background:#a95bff;color:#a95bff}.swatch-green{background:#47bf76;color:#47bf76}.swatch-cyan{background:#4ad5ed;color:#4ad5ed}
+body.aura-dark .aura-demo-toggles{display:flex;gap:10px;flex-wrap:wrap}
+body.aura-dark .aura-demo-toggles button{border:1px solid #ffffff1a;background:#201e1b;color:#f0e5d8;border-radius:999px;padding:11px 14px;font-size:10px;cursor:pointer}
+body.aura-dark .aura-demo-toggles button[aria-pressed=true]{border-color:#ff9e3b;color:#ffb25c}
+body.aura-dark .aura-demo-disclaimer{font-size:10px!important;color:#8e857b!important}
+body.aura-dark .aura-demo-art{min-height:390px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #ffffff12;border-radius:22px;background:radial-gradient(ellipse at center,#211b14,#141312 65%);isolation:isolate}
+body.aura-dark .aura-demo-art img{z-index:1;position:relative;width:90%;height:350px;object-fit:contain;filter:drop-shadow(0 20px 25px #0008)}
+body.aura-dark .aura-demo-halo{position:absolute;z-index:0;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ff9e3b42,#ff9e3b0c 46%,transparent 72%);filter:blur(20px);animation:auraGlow 4s ease-in-out infinite}
+body.aura-dark .aura-demo-art[data-glow=purple] .aura-demo-halo{background:radial-gradient(circle,#a95bff55,#a95bff12 46%,transparent 72%)}
+body.aura-dark .aura-demo-art[data-glow=green] .aura-demo-halo{background:radial-gradient(circle,#47bf7650,#47bf7612 46%,transparent 72%)}
+body.aura-dark .aura-demo-art[data-glow=cyan] .aura-demo-halo{background:radial-gradient(circle,#4ad5ed50,#4ad5ed12 46%,transparent 72%)}
+body.aura-dark .aura-demo-mist{position:absolute;z-index:2;top:17%;left:38%;height:42%;width:25%;pointer-events:none}
+body.aura-dark .aura-demo-mist i{position:absolute;bottom:0;left:50%;width:23px;height:80px;border-radius:50%;background:linear-gradient(0deg,#ffffff18,#ffffff03);filter:blur(10px);animation:auraMist 3.5s ease-in-out infinite}
+body.aura-dark .aura-demo-mist i:nth-child(2){left:28%;animation-delay:-1s}body.aura-dark .aura-demo-mist i:nth-child(3){left:70%;animation-delay:-2s}body.aura-dark .aura-demo-mist i:nth-child(4){left:42%;animation-delay:-2.5s}
+body.aura-dark .aura-demo-art.mist-disabled .aura-demo-mist{opacity:0}
+body.aura-dark .aura-demo-art.remote-preview{outline:1px solid #ff9e3b66;box-shadow:0 0 35px #ff9e3b15}
+body.aura-dark .aura-demo-status{position:absolute;top:16px;left:18px;z-index:3;color:#d9b88d;font-size:8px;letter-spacing:.14em}
+body.aura-dark .aura-reviews-placeholder{display:grid;grid-template-columns:1fr .6fr;gap:35px;align-items:center;padding:70px 0;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}
+body.aura-dark .aura-reviews-placeholder h2{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.06em;margin:0 0 12px}
+body.aura-dark .aura-reviews-placeholder h2 em{font-family:Georgia,serif;color:#ff9e3b;font-weight:400}
+body.aura-dark .aura-reviews-placeholder p:not(.aura-eyebrow){max-width:600px;color:#aaa197;font-size:12px;line-height:1.9}
+body.aura-dark .aura-review-note{border:1px solid #ff9e3b33;border-radius:15px;background:#1b1917;padding:22px}
+body.aura-dark .aura-review-note strong,body.aura-dark .aura-review-note span{display:block}body.aura-dark .aura-review-note strong{font-size:13px}body.aura-dark .aura-review-note span{font-size:11px;color:#a79e94;margin-top:5px}
+body.aura-dark .aura-trust-badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:20px 0}
+body.aura-dark .aura-trust-badges span{display:block;padding:12px;background:#1b1917;border:1px solid #ffffff10;border-radius:11px;font-size:12px}
+body.aura-dark .aura-trust-badges b,body.aura-dark .aura-trust-badges small{display:block}body.aura-dark .aura-trust-badges b{font-size:10px;margin:5px 0}body.aura-dark .aura-trust-badges small{font-size:9px;color:#9e958a;line-height:1.5}
+body.aura-dark .bag-shipping-progress{padding:16px 24px;border-bottom:1px solid #ffffff10;background:#181715}
+body.aura-dark .bag-shipping-progress>div:first-child{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#d7cec3}
+body.aura-dark .bag-shipping-progress strong{color:#ffb25c;font-size:10px}
+body.aura-dark .bag-shipping-track{height:4px;border-radius:20px;background:#39322a;margin:10px 0}
+body.aura-dark .bag-shipping-track span{display:block;width:100%;height:100%;border-radius:20px;background:#ff9e3b;opacity:.55}
+body.aura-dark .bag-shipping-progress small{font-size:9px;color:#92887d;line-height:1.5;display:block}
+body.aura-dark .bag-overlay{background:#000b!important;backdrop-filter:blur(5px)}
+body.aura-dark .bag-drawer{background:#151413!important;color:#f5f1ea!important;border-left:1px solid #ff9e3b2b;box-shadow:-25px 0 70px #000a!important}
+body.aura-dark .drawer-header{border-color:#ffffff18!important}body.aura-dark .drawer-header .eyebrow{color:#d0a06c!important}body.aura-dark .drawer-header h2,body.aura-dark .bag-line h3{color:#f5f1ea!important}body.aura-dark .close-button{background:#211f1c!important;color:#f5f1ea!important;border-color:#ffffff22!important}body.aura-dark .bag-line{border-color:#ffffff16!important}body.aura-dark .bag-line>img{background:#211f1c!important}body.aura-dark .bag-line p,body.aura-dark .bag-bottom>p,body.aura-dark .bag-bottom>small{color:#a89e93!important}body.aura-dark .bag-bottom{background:#151413!important;border-color:#ffffff1c!important}body.aura-dark .bag-bottom .subtotal strong{color:#f5f1ea!important}body.aura-dark .bag-bottom #drawerCheckoutButton{background:#ff9e3b!important;color:#21170d!important;border:0!important;border-radius:999px!important}body.aura-dark .drawer-view-bag{color:#d5c7b6!important}
+@keyframes auraGlow{0%,100%{opacity:.7;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}@keyframes auraMist{0%,100%{transform:translateY(12px) scale(.75);opacity:.1}50%{transform:translateY(-22px) scale(1.2);opacity:.8}}@keyframes auraFlame{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}@keyframes auraShimmer{to{left:150%}}@keyframes auraCountPop{0%{transform:scale(1)}45%{transform:scale(1.35)}100%{transform:scale(1)}}
+@media(max-width:1050px){body.aura-dark .store-global-header{gap:12px!important;padding:0 18px!important}body.aura-dark .store-global-links{gap:10px!important}body.aura-dark .store-global-links a{font-size:9px!important}}
+@media(max-width:850px){body.aura-dark .store-global-header{height:70px!important;gap:12px!important}body.aura-dark .store-global-menu-toggle{display:flex!important;width:38px!important;height:38px!important;border:1px solid #ffffff24!important;border-radius:50%!important;background:transparent!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;gap:5px!important}body.aura-dark .store-global-menu-toggle span{width:15px!important;height:1px!important;background:#eee!important}body.aura-dark .store-global-links{display:none!important}body.aura-dark .store-global-brand{margin-right:auto!important;font-size:15px!important}body.aura-dark .store-global-actions{gap:6px!important}body.aura-dark .store-global-mobile-nav{top:104px!important}}
+@media(max-width:600px){body.aura-dark .aura-demo-added{grid-template-columns:1fr;gap:25px;padding:45px 0}body.aura-dark .aura-demo-art{min-height:320px}body.aura-dark .aura-demo-art img{height:290px}body.aura-dark .aura-reviews-placeholder{grid-template-columns:1fr;gap:18px;padding:45px 0}body.aura-dark .aura-trust-badges{grid-template-columns:1fr}body.aura-dark .bag-shipping-progress{padding:14px 18px}body.aura-dark .store-global-header{padding:0 12px!important}body.aura-dark .store-global-brand{font-size:13px!important}body.aura-dark .aura-product-page{width:calc(100% - 32px)}}
+@media(prefers-reduced-motion:reduce){body.aura-dark *{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
