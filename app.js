@@ -224,7 +224,7 @@ if(template){
   root.innerHTML="";
   const fragment=template.content.cloneNode(true);
   const main=fragment.querySelector("[data-template-main-image]");
-  if(main){if(imgs[0])main.src=imgs[0];else{main.removeAttribute("src");const box=main.closest(".detail-photo");if(box){box.classList.add("image-placeholder");box.dataset.imageInitial=(String(p.name||"Y").trim().charAt(0)||"Y").toUpperCase();}}main.alt=p.name+" — product image";main.dataset.productId=String(p.id);}
+  if(main){if(imgs[0])main.src=imgs[0];else{main.removeAttribute("src");const box=main.closest(".detail-photo");if(box){box.classList.add("image-placeholder");box.dataset.imageInitial=(String(p.name||"Y").trim().charAt(0)||"Y").toUpperCase();}}main.alt=dog?displayProductName(p)+" in "+dogBottleColor(p)+" — illustrative rendering with integrated drinking bowl and carry strap":p.name+" — product image";main.dataset.productId=String(p.id);}
   const dog=isDogBottle(p);
   const title=fragment.querySelector("[data-template-name]");if(title)title.textContent=displayProductName(p);
   const price=fragment.querySelector("[data-template-price]");if(price)price.textContent=money(p.price);
