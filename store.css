@@ -234,3 +234,11 @@ html body .quick-add:hover,html body .product-buy-now:hover,html body .button-da
 /* Responsive header geometry: three columns on desktop, menu/wordmark/bag on compact screens. */
 @media(min-width:761px){html body header.store-global-header{grid-template-columns:auto minmax(0,1fr) auto!important}}
 @media(max-width:900px){html body header.store-global-header{grid-template-columns:36px minmax(0,1fr) auto!important;height:64px!important;gap:12px!important;padding:0 20px!important}html body .store-global-links{display:none!important}html body .store-global-mobile-nav{top:96px!important}}
+
+/* Bundle pricing: make the discount and final payable total easy to scan. */
+.bundle-savings-note{margin:12px 0 18px!important;color:#555!important;font-size:12px!important;line-height:1.6!important}
+.bundle-discount-line{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:10px 0;color:#3d654a;font-size:13px}
+.bundle-discount-line[hidden]{display:none!important}
+.bundle-discount-line strong{font-weight:700;white-space:nowrap}
+.bundle-total-line{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:10px 0 14px;padding-top:12px;border-top:1px solid #c8c8c8;font-size:14px;font-weight:700}
+.bundle-total-line strong{font-size:17px;white-space:nowrap}
