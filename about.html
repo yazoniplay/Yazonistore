@@ -4,6 +4,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="store.css?v=satin-20261018c">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Manrope:wght@400;500;700&display=swap"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css?v=1">
 </head>
 <body class="premium-store luxury-store"><div class="luxury-announcement">Tracked delivery worldwide.</div>
 <header class="luxury-header">
@@ -24,4 +25,5 @@ if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=me
 <script>
 (()=>{const mark=img=>{if(!(img instanceof HTMLImageElement)||img.dataset.fallbackHandled)return;const src=img.getAttribute('src');if(src&&!(img.complete&&img.naturalWidth===0))return;img.dataset.fallbackHandled='true';img.classList.add('image-failed');const box=img.closest('.product-image-wrap,.detail-photo,.bag-line');if(box){box.classList.add('image-placeholder');box.dataset.imageInitial=((img.alt||'Yazonistore product').trim().charAt(0)||'Y').toUpperCase()}};document.addEventListener('error',e=>mark(e.target),true);const scan=()=>document.querySelectorAll('img').forEach(mark);new MutationObserver(scan).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['src']});scan()})();
 </script>
+<script src="motion.js?v=1" defer></script>
 </body></html>
