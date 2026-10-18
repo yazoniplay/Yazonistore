@@ -201,3 +201,17 @@ html body .store-footer,html body .calm-footer,html body .site-footer,html body 
 html body .store-footer a,html body .calm-footer a,html body .site-footer a,html body .luxury-footer a,html body .minimal-footer a{color:#C9C6BF!important}
 html body .detail-conversion-title,html body .store-section h2,html body h1,html body h2,html body h3{color:#55554F!important}
 html body .detail-conversion-price,html body .detail-conversion-description,html body .detail-benefit-list li,html body .detail-trust-item,html body .store-section p,html body .store-details-list span,html body .store-accordion-list summary,html body .store-accordion-list details p{color:#62625C!important}
+
+
+/* Keep the slim announcement and sticky header aligned on scroll; refine the drawer. */
+html body .store-announcement,html body .luxury-announcement,html body .announcement{position:sticky!important;top:0!important;z-index:101!important;min-height:32px!important}
+html body header.store-global-header{top:32px!important}
+html body .store-global-mobile-nav{top:102px!important}
+html body .bag-drawer,html body .bag-bottom,html body .drawer-header{background:#F7F5F0!important;color:#62625C!important;border-color:#DEDAD2!important}
+html body .bag-drawer .bag-line{border-color:#DEDAD2!important}
+html body .bag-drawer .bag-line h3,html body .bag-drawer .subtotal strong{color:#55554F!important}
+html body .bag-drawer .empty-state h2{font-family:var(--font-heading),sans-serif!important;color:#55554F!important}
+html body .bag-drawer .empty-state p,html body .bag-bottom>p,html body .bag-bottom>small{color:#62625C!important}
+html body .bag-bottom #drawerCheckoutButton{background:#2B2B2B!important;border-color:#2B2B2B!important;color:#C9C6BF!important}
+html body .bag-drawer .close-button,html body .bag-drawer .qty-control button{background:transparent!important;color:#62625C!important;border-color:#DEDAD2!important}
+@media(max-width:760px){html body header.store-global-header{top:32px!important}html body .store-global-mobile-nav{top:96px!important}}
