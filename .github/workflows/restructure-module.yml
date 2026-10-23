@@ -1,0 +1,56 @@
+name: Tuff module dispatch
+on:
+  repository_dispatch:
+    types:
+      - restructure_module_action
+
+permissions:
+  contents: read
+
+jobs:
+  record-module-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record dispatched module payload
+        env:
+          MODULE_ID: ${{ github.event.client_payload.module_id }}
+          MODULE_TITLE: ${{ github.event.client_payload.module_title }}
+          TASKS_JSON: ${{ toJSON(github.event.client_payload.tasks) }}
+          TRIGGERS_JSON: ${{ toJSON(github.event.client_payload.triggers) }}
+          LABELS_JSON: ${{ toJSON(github.event.client_payload.labels) }}
+          EVENT_TYPE: ${{ github.event.action }}
+          REPOSITORY: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          mkdir -p output
+          jq -n \
+            --arg module_id "$MODULE_ID" \
+            --arg module_title "$MODULE_TITLE" \
+            --arg tasks "$TASKS_JSON" \
+            --arg triggers "$TRIGGERS_JSON" \
+            --arg labels "$LABELS_JSON" \
+            --arg event_type "$EVENT_TYPE" \
+            --arg repository "$REPOSITORY" \
+            --arg run_id "$RUN_ID" \
+            --arg run_url "$RUN_URL" \
+            '{
+              event_type: $event_type,
+              module_id: $module_id,
+              module_title: $module_title,
+              tasks: ($tasks | fromjson? // []),
+              triggers: ($triggers | fromjson? // []),
+              labels: ($labels | fromjson? // []),
+              repository: $repository,
+              run_id: $run_id,
+              run_url: $run_url,
+              status: "success"
+            }' > output/restructure-module-result.json
+          cat output/restructure-module-result.json
+
+      - name: Upload workflow result
+        uses: actions/upload-artifact@v4
+        with:
+          name: restructure-module-result-${{ github.run_id }}
+          path: output/restructure-module-result.json
+          if-no-files-found: error
